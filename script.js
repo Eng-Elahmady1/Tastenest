@@ -44,10 +44,8 @@ $(document).ready(function () {
     let targetColor = $(this).data("color");
     $(this).css("color",targetColor).parents().siblings().find(".tab").css("color","black");
   });
-});
 
-
-// Start Count Down 
+  // Start Count Down 
 // Set the date and time for the countdown (YYYY-MM-DDTHH:MM:SS)
 var countDownDate = new Date("2028-04-30T23:59:59").getTime();
 
@@ -169,3 +167,8 @@ var swiper = new Swiper(".mySwiper-3", {
     1024: { slidesPerView: 1, spaceBetween: 30 },
   },
 });
+
+});
+
+
+

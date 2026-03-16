@@ -52,6 +52,10 @@ ul {
   z-index: 99999999;
 }
 
+.landing{
+  background-image: url('/images/landing.webp');
+}
+
 /* Back Class  */
 .back {
   transform: translateX(100%);
