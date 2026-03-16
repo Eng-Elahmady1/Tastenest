@@ -1,0 +1,1579 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tastenest</title>
+    <!-- favicon Page -->
+    <link rel="shortcut icon" href="./Images/TesteNest.webp" />
+    <!-- Owl carousel  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+      integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Google Font Link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Css Link  -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Start Header  -->
+    <header>
+      <div class="container flex items-center justify-between h-[97px] m-auto py-4 md:gap-[150px]">
+        <div class="logo flex items-center justify-between">
+          <img src="./Images/TesteNest.webp" alt="" />
+          <div class="toggle cursor-pointer block md:hidden">
+            <i
+              class="fa-solid fa-bars-staggered text-[#212121] text-[22px] hover:text-[#FFC222]"
+            ></i>
+          </div>
+        </div>
+        <div class="hidden md:block"></div>
+        <div class="r-side flex items-center justify-between flex-1">
+          <ul class="links flex items-center gap-12 font-medium duration-500 ease-in-out">
+            <li class="hover:text-[#FFC222]">
+              <a class="active" href="main.html">Home-1</a>
+            </li>
+            <li class="hover:text-[#FFC222]"><a href="second.html">Home-2</a></li>
+            <li class="hover:text-[#FFC222]"><a href="#about">About</a></li>
+            <li class="hover:text-[#FFC222]"><a href="#Services">Services</a></li>
+            <li class="hover:text-[#FFC222]"><a href="#Contact">Contact</a></li>
+          </ul>
+          <div class="buttons flex items-center gap-[25px]">
+            <div class="bucket cursor-pointer md:block hidden">
+              <i class="fa-solid fa-bucket text-[#00A149]"></i>
+            </div>
+            <button
+              class="btn duration-300 ease-in-out w-[180px] h-[57px] bg-[#FFC222] rounded-lg text-white text-[18px] font-medium hover:bg-[#F3274C]"
+            >
+              Contact Us
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- End Header  -->
+
+    <!-- Strat Landing  -->
+    <div  class="landing bg-[url(/images/landing.webp)] bg-cover bg-center bg-no-repeat h-screen w-full relative"
+    >
+      <div class="container">
+        <div
+          class="content m-auto text-center md:text-start md:m-0 max-w-[350px] md:max-w-[600px] text-white flex flex-col items-center md:items-start justify-center h-full"
+          data-aos="fade-right"
+          data-aos-duration="1500"
+        >
+          <h1
+            class="text-[30px] md:text-[60px] font-bold leading-[45px] md:leading-[75px]"
+          >
+            The Perfect Space to Enjoy Fantastic Food
+          </h1>
+          <p
+            class="my-[30px] text-[15px] md:text-[20px] leading-[25px] font-light"
+          >
+            Festive dining at Farthings where we are strong believers in using
+            the very best produce
+          </p>
+          <button
+            class="btn hover:scale-105 relative before:[*] before:absolute hover:before:w-[110%] before:w-[95%] before:h-[69px] before:border-[3px] before:border-[#F3274C] hover:before:left-[-9px] before:left-[16px] before:top-[-6px] before:rounded-[13px] before:duration-300 before:ease-in-out duration-300 ease-in-out hover:bg-[#FFC222] hover:before:border-[#FFC222] w-[180px] h-[57px] bg-[#F3274C] rounded-lg text-[18px] text-white text-[18px] font-medium"
+          >
+            See Our Menus
+          </button>
+        </div>
+        <div
+          class="pizza absolute bottom-[80px] md:bottom-[150px] right-[34px] md:right-[200px]"
+          data-aos="zoom-in-up"
+          data-aos-duration="1500"
+        >
+          <div
+            class="pizza-box bg-[#000000CC] py-[21px] px-[28px] border-[3px] border-[#FFD40D] rounded-[30px] w-[360px] md:w-[400px] h-[190px] flex items-center justify-between text-white"
+          >
+            <div class="text">
+              <p class="text-[28px] m-0 font-semibold">
+                <span class="text-[#F3274C]">$</span>90.85
+              </p>
+              <h3 class="text-[22px] mb-[6px]">Sicilian Pizza</h3>
+              <ul class="stars text-[#FFD40D]">
+                <i class="fa-solid fa-star text-[15px]"></i>
+                <i class="fa-solid fa-star text-[15px]"></i>
+                <i class="fa-solid fa-star text-[15px]"></i>
+                <i class="fa-solid fa-star text-[15px]"></i>
+                <i class="fa-solid fa-star text-[15px]"></i>
+              </ul>
+            </div>
+            <img src="./Images/pizza.webp" alt="" />
+          </div>
+          <div
+            class="info absolute top-[-10px] right-[45px] bg-[#F3274C] p-[5px] w-[125px] h-[26px] flex items-center justify-center text-white rounded-[5px] text-[15px]"
+          >
+            <h2>Weekly Special</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Landing  -->
+
+    <!-- Start About  -->
+    <div id="about" class="about mt-[135px]">
+      <div class="container">
+        <div
+          class="content flex flex-col md:flex-row items-center justify-between mb-[35px]"
+        >
+          <div
+            class="title w-full md:w-fit"
+            data-aos="fade-right"
+            data-aos-duration="1200"
+          >
+            <h1 class="text-[#F3274C] text-[18px] font-medium mb-[12px]">
+              About The Food Restaurant
+            </h1>
+            <h3
+              class="text-[35px] md:text-[60px] max-w-[350px] md:max-w-[500px] font-bold leading-[40px] md:leading-[72px]"
+            >
+              New Ground With Dishes To Be Enjoyed
+            </h3>
+          </div>
+          <div
+            class="info mt-[30px] md:mt-0"
+            data-aos="fade-left"
+            data-aos-duration="1200"
+          >
+            <p
+              class="text-[14px] md:text-[18px] text-[#555555] mb-[20px] md:mb-[30px] max-w-[570px]"
+            >
+              Nisl quam nestibulum ac quam nec odio eleme aucan ligula. Orci
+              varius nat oque pena tibus et urient monte nascete ridiculus mus
+              nellentesq um ac qu am nec odio rbine. Nisl quam nestibu aucan
+              ligula.
+            </p>
+            <div class="profile flex items-center gap-[20px]">
+              <img src="./Images/profile.webp" alt="" />
+              <div class="text">
+                <h2 class="text-[30px] font-medium">Willimes James</h2>
+                <p class="text-[16px]">Director and Chief Operations Officer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="cards grid md:grid-flow-col gap-[30px] md:gap-0 mb-[140px]"
+          data-aos="zoom-in-up"
+          data-aos-duration="1500"
+        >
+          <div
+            class="card grid-rows-12 md:grid-rows-4 w-[380px] md:w-[410px] h-[525px] p-[15px] rounded-[30px] bg-[url(/images/card-1.webp)] bg-cover bg-center duration-300 hover:scale-110"
+          >
+            <div
+              class="border-[5px] border-[#FFD40D] w-full h-full rounded-[30px] flex items-end justify-center"
+            >
+              <button
+                class="text w-full h-[67px] bg-[#FFD40D] font-bold text-[30px] rounded-tr-[30px] rounded-tl-[30px] rounded-br-[22px] rounded-bl-[22px]"
+              >
+                <p>Restaurant</p>
+              </button>
+            </div>
+          </div>
+          <div
+            class="card grid-rows-12 md:grid-rows-4 md:mt-[100px] w-[380px] md:w-[410px] h-[525px] p-[15px] rounded-[30px] bg-[url(/images/card-2.webp)] bg-cover bg-center duration-300 hover:scale-110"
+          >
+            <div
+              class="border-[5px] border-[#FFD40D] w-full h-full rounded-[30px] flex items-end justify-center"
+            >
+              <button
+                class="text w-full h-[67px] bg-[#FFD40D] font-bold text-[30px] rounded-tr-[30px] rounded-tl-[30px] rounded-br-[22px] rounded-bl-[22px]"
+              >
+                <p>Coctail Bar</p>
+              </button>
+            </div>
+          </div>
+          <div
+            class="card grid-rows-12 md:grid-rows-4 w-[380px] md:w-[410px] h-[525px] p-[15px] rounded-[30px] bg-[url(/images/card-3.webp)] bg-cover bg-center duration-300 hover:scale-110"
+          >
+            <div
+              class="border-[5px] border-[#FFD40D] w-full h-full rounded-[30px] flex items-end justify-center"
+            >
+              <button
+                class="text w-full h-[67px] bg-[#FFD40D] font-bold text-[30px] rounded-tr-[30px] rounded-tl-[30px] rounded-br-[22px] rounded-bl-[22px]"
+              >
+                <p>Private Dining</p>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="Category mb-[100px]">
+          <ul
+            id="my-taps"
+            class="flex items-center justify-center gap-[20px] my-[20px] md:my-[60px]"
+          >
+            <li
+              id="tap1"
+              class="active w-[190px] h-[190px] border-[5px] border-[#E4E4E4] rounded-[20px] flex items-center justify-center flex-col duration-300 ease-in-out hover:bg-[#F3274C] hover:text-white group cursor-pointer"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <svg
+                width="70"
+                height="70"
+                viewBox="0 0 70 70"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M62.5475 40.4688C58.2586 40.4688 56.0164 38.243 54.2145 36.4547C52.5643 34.8168 51.3707 33.6328 48.773 33.6328C47.9705 33.6328 47.302 33.7449 46.7113 33.95C47.3346 40.8026 41.9042 46.7578 35 46.7578C28.0934 46.7578 22.6658 40.7997 23.2887 33.9514C22.698 33.7463 22.0295 33.6328 21.2256 33.6328C18.6279 33.6328 17.4344 34.8168 15.7842 36.4561C13.9822 38.243 11.7414 40.4688 7.45254 40.4688C4.3832 40.4688 2.21006 39.3757 0.0820312 37.3871C1.30689 55.6337 16.4871 70 35 70C53.4997 70 68.695 55.6413 69.918 37.3885C67.7931 39.3697 65.6178 40.4688 62.5475 40.4688ZM53.7578 43.3398C54.6656 42.6645 55.9508 42.8518 56.6275 43.7609L58.1328 45.783C58.8096 46.6908 58.6209 47.976 57.7131 48.6527C56.809 49.325 55.523 49.1471 54.8434 48.2316L53.3367 46.2096C52.6613 45.3018 52.8486 44.0166 53.7578 43.3398ZM40.8064 54.2076L43.1102 53.2902C44.1629 52.8719 45.3551 53.3846 45.7748 54.4373C46.1932 55.49 45.6791 56.6822 44.6277 57.1006C42.4032 57.9428 42.2134 58.1643 41.5652 58.1643C39.3148 58.1643 38.7152 55.0387 40.8064 54.2076ZM22.6146 50.3289C23.7207 50.0828 24.8158 50.7801 25.0605 51.8861L25.6074 54.3471C25.8535 55.4531 25.1562 56.5482 24.0516 56.7943C22.9232 57.0407 21.8457 56.3262 21.6043 55.2371L21.0574 52.7762C20.8113 51.6701 21.5086 50.575 22.6146 50.3289ZM12.7162 44.0945L15.0404 43.1156C16.0836 42.6768 17.2867 43.1662 17.7256 44.2107C18.1658 45.2539 17.675 46.457 16.6318 46.8959C14.4106 47.7825 14.203 48.0348 13.5133 48.0348C11.2849 48.0348 10.6617 44.9589 12.7162 44.0945Z"
+                  class="fill-[#F3274C] group-hover:fill-white transition-colors duration-500 delay-300"
+                />
+                <path
+                  d="M7.45244 36.3672C10.0501 36.3672 11.2437 35.1832 12.8938 33.5439C14.6958 31.757 16.9366 29.5312 21.2255 29.5312C22.419 29.5312 23.454 29.7035 24.3646 29.9906C28.5997 21.0319 41.3741 20.9768 45.6353 29.9906C46.5458 29.7035 47.5808 29.5312 48.7729 29.5312C53.0604 29.5312 55.3026 31.7557 57.1046 33.5439C58.7548 35.1832 59.9483 36.3672 62.5474 36.3672C66.144 36.3672 67.1776 33.985 69.8577 31.8186C68.2669 14.0301 53.3228 0 34.9999 0C16.7116 0 1.73268 14.0019 0.14209 31.8213C2.82219 33.9801 3.84717 36.3672 7.45244 36.3672ZM16.3405 26.168C15.7144 26.168 15.0964 25.8822 14.6931 25.3408L13.1878 23.3188C12.5124 22.4109 12.6997 21.1258 13.6089 20.449C14.5167 19.7736 15.8019 19.9609 16.4786 20.8701L17.9839 22.8922C18.9978 24.255 18.0021 26.168 16.3405 26.168ZM30.5142 14.8941C28.3194 15.7251 28.1023 15.9578 27.453 15.9578C26.6368 15.9578 25.8671 15.4684 25.5472 14.6645C25.1274 13.6117 25.6415 12.4195 26.6942 12.0012L28.998 11.0838C30.0507 10.6654 31.2429 11.1781 31.6612 12.2309C32.081 13.2822 31.5669 14.4758 30.5142 14.8941ZM46.4282 18.9547C46.2778 18.9889 46.1288 19.0039 45.9812 19.0039C45.0405 19.0039 44.1942 18.3545 43.981 17.3975L43.4341 14.9365C43.188 13.8318 43.8853 12.7354 44.9913 12.4906C46.0974 12.2445 47.1925 12.9418 47.4386 14.0479L47.9855 16.5088C48.2302 17.6135 47.5329 18.71 46.4282 18.9547ZM60.0372 24.6121C59.9483 25.6826 59.0515 26.492 57.996 26.492C57.9386 26.492 57.8811 26.4893 57.8224 26.4852L55.3108 26.2746C54.1815 26.1803 53.3435 25.1877 53.4392 24.0598C53.5335 22.9305 54.5247 22.0924 55.654 22.1867L58.1655 22.3973C59.2948 22.4916 60.1329 23.4842 60.0372 24.6121Z"
+                  class="fill-[#F3274C] group-hover:fill-white transition-colors duration-500 delay-500"
+                />
+              </svg>
+
+              <p class="text-[22px] font-bold mt-[15px]">Dessert</p>
+            </li>
+            <li
+              id="tap2"
+              class="w-[190px] h-[190px] border-[5px] border-[#E4E4E4] rounded-[20px] flex items-center justify-center flex-col duration-300 ease-in-out hover:bg-[#F3274C] hover:text-white group cursor-pointer"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+            >
+              <svg
+                width="71"
+                height="70"
+                viewBox="0 0 71 70"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M54.045 25.1763C53.9505 25.602 53.6263 25.9395 53.205 26.0517C52.421 26.261 51.6589 26.5462 50.9299 26.903C50.3483 27.1791 49.7902 27.5032 49.2615 27.8717C49.0398 28.0229 48.8182 28.1745 48.6083 28.338C48.2585 28.6066 47.9082 28.8982 47.5701 29.1898L46.6483 30.1116C46.6483 30.1233 46.6366 30.1345 46.6248 30.1463C46.4267 30.3679 46.2168 30.5896 46.0181 30.8229C46.0181 30.8347 46.0064 30.8464 45.9834 30.8582C45.3938 31.5818 44.8555 32.3455 44.3732 33.145C44.2686 33.2967 44.1869 33.4484 44.0934 33.6112C43.8018 34.125 43.5332 34.65 43.2651 35.2097C43.2181 35.3266 43.1716 35.4313 43.1134 35.5483C42.8448 36.155 42.6002 36.7964 42.3785 37.4501C42.2733 37.7764 42.1681 38.0915 42.0752 38.4183C41.8883 39.0715 41.7131 39.7481 41.5732 40.4483C41.515 40.7633 41.445 41.0779 41.3985 41.4048C41.3515 41.7316 41.2933 42.0349 41.2581 42.35C41.2116 42.6181 41.1769 42.8862 41.1534 43.1549C41.1182 43.5047 41.0835 43.8662 41.06 44.2283C41.0252 44.6481 41.0017 45.0684 40.99 45.4999H66.6216C66.4934 35.5248 64.6498 28.6883 61.3136 25.4679L64.0784 17.1847C64.2957 16.6197 64.8645 16.2709 65.4669 16.3329C67.8515 16.3307 69.851 14.531 70.1031 12.1592C70.3546 9.78747 68.7781 7.60798 66.4469 7.1049C65.8087 6.96498 65.1481 6.96498 64.5099 7.1049C64.0981 7.19462 63.6741 7.01731 63.4482 6.66163C62.3592 5.09097 60.4227 4.34329 58.561 4.77427C56.6993 5.20472 55.2883 6.72732 54.9999 8.61682C54.7121 10.5058 55.6045 12.3798 57.2531 13.3464C57.7396 13.6508 57.949 14.2527 57.7551 14.7932L54.8734 23.3915C54.3121 23.446 53.755 23.5352 53.205 23.6596C53.3566 23.7883 53.5083 23.9048 53.66 24.0329C53.9884 24.3149 54.1364 24.7534 54.045 25.1763ZM59.9603 15.5281C60.4975 13.9488 59.8673 12.2084 58.4435 11.34C57.6184 10.8577 57.1709 9.92205 57.3129 8.9773C57.4555 8.03256 58.1594 7.26992 59.0897 7.0531C60.0201 6.83573 60.9888 7.20744 61.5352 7.99143C62.293 9.1247 63.6693 9.67639 65.0002 9.37998C65.3201 9.32124 65.648 9.32124 65.9684 9.37998C66.8854 9.5888 67.5909 10.3221 67.765 11.2465C67.891 11.9338 67.702 12.642 67.2501 13.1755C66.7978 13.7085 66.1308 14.0113 65.4317 13.9996C63.838 13.9617 62.3993 14.9491 61.8615 16.4498L59.3301 24.0447L59.0849 23.94C58.8857 23.8449 58.679 23.767 58.4665 23.7066C58.3848 23.6831 58.3031 23.6479 58.2101 23.6249C58.1167 23.6014 58.0467 23.5779 57.9533 23.5549C57.9041 23.5379 57.8534 23.5261 57.8016 23.5197C57.6499 23.485 57.4865 23.4497 57.3231 23.4262L59.9603 15.5281Z"
+                  class="fill-[#F3274C] group-hover:fill-white transition-colors duration-500 delay-300"
+                />
+                <path
+                  d="M12.3249 62.2066C14.4585 62.8555 16.4585 63.883 18.2284 65.24C21.1449 67.4099 26.4417 70.0001 35.1334 70.0001C43.8247 70.0001 49.1215 67.4099 52.0385 65.24C53.8084 63.883 55.8079 62.8555 57.9414 62.2066C61.9084 61.0402 68.7801 57.8433 70.0864 49.5601C70.2467 48.5459 69.9556 47.513 69.2891 46.7323C68.6226 45.9515 67.6479 45.5013 66.6215 45.5002C66.6332 45.8852 66.6332 46.2703 66.6332 46.6666C66.6332 47.3112 66.1109 47.8335 65.4668 47.8335H21.1331C21.1331 48.8637 20.457 49.7721 19.4701 50.068C18.4826 50.3638 17.4188 49.9772 16.8516 49.1168C16.7987 49.0389 16.7357 48.9684 16.6647 48.9069C16.2283 48.4866 15.5378 48.4866 15.1015 48.9069C15.0304 48.9684 14.968 49.0389 14.9151 49.1168C14.4323 49.8522 13.5762 50.2522 12.7025 50.1513C11.8288 50.0498 11.0864 49.4645 10.7847 48.6383C10.6469 48.2559 10.3195 47.9734 9.92165 47.8917C9.52431 47.8201 9.11736 47.9515 8.83644 48.2415C8.40172 48.7243 7.78275 48.9999 7.13333 48.9999C6.01075 48.9892 5.05532 48.1812 4.85825 47.0762C4.66118 45.9718 5.27909 44.8828 6.32851 44.4849C6.71036 44.3472 6.99341 44.0198 7.07512 43.6219C7.15203 43.224 7.02011 42.8144 6.72478 42.5367C6.24199 42.102 5.96642 41.483 5.96642 40.8336C5.97069 39.5465 7.01264 38.504 8.29972 38.5003C8.57155 38.5014 8.84018 38.5532 9.09333 38.652C9.46289 38.7887 9.87625 38.7273 10.1897 38.4885C10.5048 38.2434 10.6789 37.86 10.6565 37.4615C10.6432 37.4204 10.6351 37.3772 10.633 37.3334C10.6373 36.0463 11.6798 35.0038 12.9668 35.0001C13.7775 35.0017 14.5274 35.4321 14.9381 36.1317C14.8334 36.4933 14.7517 36.8549 14.67 37.217C14.5882 37.5785 14.5183 37.9283 14.4601 38.2787C14.451 38.2877 14.4467 38.3006 14.4483 38.3134C14.3901 38.6632 14.3431 39.0135 14.2966 39.3633C14.2614 39.6202 14.2384 39.8766 14.2149 40.1334C14.1914 40.3668 14.1797 40.5885 14.1685 40.8101C14.145 41.2069 14.1332 41.6032 14.1332 42C14.1332 42.6446 14.6555 43.1669 15.3001 43.1669C16.2914 43.1722 17.1709 43.804 17.493 44.7418C17.6222 45.1413 17.9651 45.4345 18.3801 45.5002C18.4757 45.5199 18.5739 45.528 18.6716 45.5231C18.6914 45.5231 18.7112 45.5194 18.7299 45.5119C18.7614 45.5141 18.7934 45.5103 18.8233 45.5002H38.6566C38.6684 45.1851 38.6801 44.87 38.7031 44.5667C38.7015 44.5079 38.7052 44.4497 38.7148 44.3915C38.7266 44.0807 38.7501 43.7656 38.7848 43.4467C38.8083 43.1087 38.843 42.7818 38.89 42.455C38.9365 42.1281 38.9717 41.8136 39.0182 41.4867C40.2898 33.2153 44.5601 27.6968 49.3549 25.0949C49.7282 24.8968 50.1015 24.7099 50.4748 24.547C51.3517 24.1571 52.2665 23.8602 53.2049 23.6599C49.0606 20.3803 43.9182 18.6184 38.6331 18.667C28.7167 18.6622 19.7456 24.5486 15.8016 33.6468C14.9947 33.0086 13.9954 32.663 12.9668 32.6668C10.8397 32.6684 8.98331 34.1077 8.45139 36.167C6.78139 36.112 5.20912 36.9547 4.33007 38.3759C3.45047 39.797 3.39867 41.5797 4.19335 43.0499C3.37731 43.7218 2.80747 44.6452 2.57141 45.6748C1.94657 45.8778 1.38954 46.2495 0.961764 46.7483C0.305942 47.528 0.0207549 48.5539 0.179904 49.5601C1.48674 57.8433 8.35846 61.0402 12.3249 62.2066ZM35.3316 23.4618C35.6841 22.9256 36.4034 22.7744 36.9418 23.1232C38.6977 24.3024 40.3245 25.6631 41.7947 27.1836C42.0142 27.4015 42.1371 27.699 42.1349 28.0082C42.1323 28.318 42.0057 28.6133 41.783 28.8285C41.5662 29.0437 41.2724 29.1655 40.9664 29.1666C40.654 29.1687 40.3544 29.0421 40.1381 28.8168C38.7752 27.4202 37.2745 26.1657 35.6584 25.0719C35.3994 24.9032 35.2194 24.6378 35.158 24.3349C35.0966 24.0327 35.1591 23.7176 35.3316 23.4618ZM28.2617 27.4752C28.4 27.1986 28.6425 26.9892 28.9362 26.8925C29.23 26.7964 29.5499 26.821 29.8249 26.962C32.7446 28.4499 35.2894 30.5797 37.2681 33.1918C37.44 33.4481 37.5025 33.7627 37.4411 34.0649C37.3797 34.3672 37.1997 34.6326 36.9418 34.8019C36.7538 34.9333 36.5295 35.0027 36.2998 35.0001C35.9094 34.9979 35.5463 34.8009 35.3316 34.4751C33.566 32.2091 31.3288 30.3538 28.775 29.0384C28.4983 28.9001 28.289 28.6571 28.1923 28.3639C28.0962 28.0701 28.1207 27.7502 28.2617 27.4752ZM21.1801 33.5416C21.3355 32.9237 21.9614 32.5482 22.5799 32.7015C22.7898 32.7485 27.7485 34.0665 32.6015 41.3586C32.7734 41.6149 32.8359 41.9289 32.7745 42.2318C32.7131 42.534 32.5331 42.7995 32.2752 42.9682C32.0872 43.1001 31.8629 43.1696 31.6332 43.1669C31.2428 43.1648 30.8797 42.9677 30.665 42.6419C26.3482 36.1782 22.0549 34.9766 22.0084 34.9648C21.3873 34.7998 21.0167 34.1632 21.1801 33.5416Z"
+                  class="fill-[#F3274C] group-hover:fill-white transition-colors duration-500 delay-100"
+                />
+                <path
+                  d="M33.9666 8.16681C33.9666 8.81088 34.4889 9.33319 35.1335 9.33319C35.7775 9.33319 36.2999 8.81088 36.2999 8.16681C36.2999 8.07816 36.2999 8.06641 36.5412 7.82501C37.1282 7.32941 37.4662 6.60042 37.4662 5.83298C37.4662 5.065 37.1282 4.33601 36.5412 3.84041C36.2999 3.59795 36.2999 3.5862 36.2999 3.50021C36.2999 3.4137 36.2999 3.40088 36.5412 3.16055C37.1244 2.66121 37.462 1.93382 37.4668 1.16692C37.4668 0.522308 36.9445 0 36.2999 0C35.6558 0 35.1335 0.522308 35.1335 1.16692C35.1335 1.25397 35.1335 1.26572 34.8915 1.50711C34.3089 2.00592 33.9714 2.73277 33.9666 3.50021C33.9719 4.26659 34.3094 4.99397 34.8915 5.49278C35.1335 5.73204 35.1335 5.74326 35.1335 5.83351C35.1335 5.92323 35.1335 5.93391 34.8915 6.17531C34.31 6.67358 33.9724 7.40044 33.9666 8.16681Z"
+                  class="fill-[#F3274C] group-hover:fill-white transition-colors duration-500 delay-500"
+                />
+                <path
+                  d="M26.9668 13.9998C26.9668 14.6444 27.4891 15.1667 28.1332 15.1667C28.7778 15.1667 29.3001 14.6444 29.3001 13.9998C29.3001 13.9111 29.3001 13.8999 29.5415 13.658C30.1284 13.1624 30.4665 12.4334 30.4665 11.6654C30.4665 10.8974 30.1284 10.1684 29.5415 9.67284C29.3001 9.43251 29.3001 9.42076 29.3001 9.33318C29.3001 9.24559 29.3001 9.23438 29.5415 8.99405C30.1241 8.49471 30.4617 7.76732 30.467 6.99988C30.467 6.3558 29.9442 5.8335 29.3001 5.8335C28.6555 5.8335 28.1332 6.3558 28.1332 6.99988C28.1332 7.08746 28.1332 7.09921 27.8918 7.33954C27.3054 7.83514 26.9668 8.5636 26.9668 9.33157C26.9668 10.0995 27.3054 10.828 27.8918 11.3236C28.1332 11.5661 28.1332 11.5778 28.1332 11.6665C28.1332 11.7551 28.1332 11.7669 27.8918 12.0083C27.3097 12.5071 26.9727 13.2334 26.9668 13.9998Z"
+                  class="fill-[#F3274C] group-hover:fill-white transition-colors duration-500 delay-700"
+                />
+                <path
+                  d="M40.9666 13.9998C40.9666 14.6444 41.4889 15.1667 42.1335 15.1667C42.7775 15.1667 43.2999 14.6444 43.2999 13.9998C43.2999 13.9111 43.2999 13.8999 43.5418 13.658C44.1282 13.1624 44.4668 12.4334 44.4668 11.6654C44.4668 10.8974 44.1282 10.1684 43.5418 9.67284C43.2999 9.43251 43.2999 9.42076 43.2999 9.33318C43.2999 9.24559 43.2999 9.23438 43.5418 8.99405C44.1244 8.49471 44.462 7.76732 44.4668 6.99988C44.4668 6.3558 43.9445 5.8335 43.2999 5.8335C42.6558 5.8335 42.1335 6.3558 42.1335 6.99988C42.1335 7.08746 42.1335 7.09921 41.8921 7.33954C41.3051 7.83514 40.9671 8.5636 40.9671 9.33157C40.9671 10.0995 41.3051 10.828 41.8921 11.3236C42.1335 11.5661 42.1335 11.5778 42.1335 11.6665C42.1335 11.7551 42.1335 11.7669 41.8921 12.0083C41.31 12.5071 40.9724 13.2334 40.9666 13.9998Z"
+                  class="fill-[#F3274C] group-hover:fill-white transition-colors duration-500 delay-1000"
+                />
+              </svg>
+              <p class="text-[22px] font-bold mt-[15px]">Steak</p>
+            </li>
+            <li
+              id="tap3"
+              class="w-[190px] h-[190px] border-[5px] border-[#E4E4E4] rounded-[20px] flex items-center justify-center flex-col duration-300 ease-in-out hover:bg-[#F3274C] hover:text-white group cursor-pointer"
+              data-aos="fade-up"
+              data-aos-duration="2000"
+            >
+              <svg
+                width="70"
+                height="70"
+                viewBox="0 0 70 70"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8.90632 66.963H18.4378C18.5703 67.7934 19.2585 68.4428 20.1276 68.4428H41.7981C42.6705 68.4428 43.3554 67.7966 43.4879 66.963H53.0194C54.6317 66.963 55.937 65.6577 55.937 64.0454H5.99194C5.99194 65.6577 7.29727 66.963 8.90632 66.963Z"
+                  class="fill-[#F3274C] group-hover:fill-white transition-colors duration-500 delay-300"
+                />
+                <path
+                  d="M67.4169 36.9757C64.9872 35.008 61.5655 34.9757 59.3135 35.2245C59.3781 33.6542 59.4137 32.0484 59.4137 30.3779H0.00170898C0.00170898 46.4361 2.43144 58.0225 17.8078 62.3456H41.6075C47.698 60.6364 51.7368 57.764 54.4153 53.945C60.2505 53.8319 69.6366 51.5346 69.9888 43.4765C70.1406 39.9482 68.6738 37.9902 67.4169 36.9757ZM56.8612 49.3375C57.9791 46.4652 58.6414 43.2341 59.0065 39.6833C60.5833 39.4248 63.3006 39.26 64.6738 40.3779C64.9258 40.5847 65.7109 41.2245 65.6204 43.2891C65.4363 47.4636 60.2537 48.8658 56.8612 49.3375Z"
+                  class="fill-[#F3274C] group-hover:fill-white transition-colors duration-500 delay-500"
+                />
+                <path
+                  d="M24.2051 28.1229C24.2051 28.1229 35.5137 27.2925 30.3312 17.7578C26.1696 10.1035 27.1195 5.61236 32.4442 1.5542C32.4442 1.5542 15.0032 5.99685 25.1744 19.7448C28.9063 25.7351 24.2051 28.1229 24.2051 28.1229Z"
+                  class="fill-[#F3274C] group-hover:fill-white transition-colors duration-500 delay-700"
+                />
+                <path
+                  d="M31.8271 27.3605C31.8271 27.3605 40.8869 25.4509 35.9564 18.165C34.1664 15.0051 36.6349 13.8774 36.6349 13.8774C36.6349 13.8774 30.8029 14.0616 33.265 19.0729C35.2359 23.102 34.6511 25.3896 31.8271 27.3605Z"
+                  class="fill-[#F3274C] group-hover:fill-white transition-colors duration-500 delay-1000"
+                />
+              </svg>
+              <p class="text-[22px] font-bold mt-[15px]">Coffee</p>
+            </li>
+            <li
+              id="tap4"
+              class="w-[190px] h-[190px] border-[5px] border-[#E4E4E4] rounded-[20px] flex items-center justify-center flex-col duration-300 ease-in-out hover:bg-[#F3274C] hover:text-white group cursor-pointer"
+              data-aos="fade-up"
+              data-aos-duration="2500"
+            >
+              <svg
+                width="70"
+                height="70"
+                viewBox="0 0 70 70"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M65.8001 53.1997H4.20164C1.88613 53.1997 0.00170898 55.0841 0.00170898 57.3996C0.00170898 61.2579 3.14041 64.3995 7.00154 64.3995H63.0002C66.8614 64.3995 70.0001 61.2579 70.0001 57.3996C69.9999 55.084 68.1156 53.1997 65.8001 53.1997Z"
+                  class="fill-[#F3274C] group-hover:fill-white transition-colors duration-500 delay-300"
+                />
+                <path
+                  d="M1.47169 30.8H68.4853C68.8353 30.8 69.2161 30.6264 69.4765 30.3912C69.7314 30.1588 69.8909 29.8424 69.9217 29.5009C70.3753 24.9931 68.7821 20.5831 65.3102 16.7416C59.0943 9.87052 47.4803 5.60059 35.001 5.60059C22.5021 5.60059 10.8767 9.87886 4.66932 16.7667C1.19729 20.6168 -0.387441 25.0322 0.0801442 29.5457C0.153016 30.2568 0.754998 30.8 1.47169 30.8ZM53.6092 17.2091C54.1552 16.6632 55.0428 16.6632 55.5888 17.2091L58.3887 20.0091C58.9347 20.5579 58.9347 21.4426 58.3887 21.9886C58.1171 22.263 57.7587 22.4002 57.4004 22.4002C57.042 22.4002 56.6835 22.263 56.4091 21.9886L53.6092 19.1887C53.0633 18.6428 53.0633 17.7579 53.6092 17.2091ZM42.4095 22.8091L45.2094 20.0092C45.7553 19.4633 46.6429 19.4633 47.189 20.0092C47.7349 20.558 47.7349 21.4427 47.189 21.9888L44.3891 24.7887C44.1174 25.0631 43.759 25.2002 43.4007 25.2002C43.0424 25.2002 42.6839 25.0631 42.4095 24.7887C41.8635 24.2426 41.8635 23.3579 42.4095 22.8091ZM34.0098 11.6093C34.5557 11.0634 35.4433 11.0634 35.9893 11.6093L38.7892 14.4092C39.3352 14.958 39.3352 15.8428 38.7892 16.3888C38.5177 16.6632 38.1592 16.8003 37.8009 16.8003C37.4425 16.8003 37.0841 16.6632 36.8097 16.3888L34.0098 13.5889C33.4637 13.0429 33.4637 12.1581 34.0098 11.6093ZM22.81 17.2091L25.6099 14.4092C26.1558 13.8633 27.0434 13.8633 27.5895 14.4092C28.1354 14.958 28.1354 15.8428 27.5895 16.3888L24.7896 19.1887C24.5179 19.4631 24.1596 19.6003 23.8012 19.6003C23.4429 19.6003 23.0844 19.4631 22.81 19.1887C22.2641 18.6428 22.2641 17.7579 22.81 17.2091ZM11.6102 20.0092C12.1562 19.4633 13.0437 19.4633 13.5898 20.0092L16.3897 22.8091C16.9356 23.3579 16.9356 24.2426 16.3897 24.7887C16.118 25.0631 15.7597 25.2002 15.4014 25.2002C15.043 25.2002 14.6845 25.0631 14.4101 24.7887L11.6102 21.9888C11.0643 21.4427 11.0643 20.558 11.6102 20.0092Z"
+                  class="fill-[#F3274C] group-hover:fill-white transition-colors duration-500 delay-1000"
+                />
+                <path
+                  d="M4.20178 33.6001C3.42616 33.6001 2.80176 34.2272 2.80176 35.0001C2.80176 35.7729 3.42616 36.4001 4.20178 36.4001H26.268L42.7736 44.6515C42.9724 44.7523 43.1851 44.7999 43.4007 44.7999C43.762 44.7999 44.1203 44.6599 44.3891 44.3883L52.3802 36.4001H65.8003C66.573 36.4001 67.2003 35.773 67.2003 35.0001C67.2003 34.2274 66.5732 33.6001 65.8003 33.6001H4.20178Z"
+                  class="fill-[#F3274C] group-hover:fill-white transition-colors duration-500 delay-700"
+                />
+                <path
+                  d="M5.60166 50.3998H64.4003C67.7994 50.3998 70.4957 47.3592 69.9217 43.8536C69.4681 41.1013 66.8754 39.2002 64.0866 39.2002H55.5189L45.9319 48.7872C45.0806 49.6384 43.7786 49.8512 42.7007 49.3108L22.4768 39.2003H5.91243C3.12373 39.2003 0.530955 41.1014 0.077315 43.8538C-0.496639 47.359 2.2025 50.3998 5.60166 50.3998Z"
+                  class="fill-[#F3274C] group-hover:fill-white transition-colors duration-500 delay-500"
+                />
+              </svg>
+              <p class="text-[22px] font-bold mt-[15px]">Burger</p>
+            </li>
+          </ul>
+          <div
+            id="tap1-content"
+            class="divtaps"
+            data-aos="zoom-in-up"
+            data-aos-duration="1500"
+          >
+            <div
+              class="flex flex-col md:flex-row items-center justify-between gap-6 py-[30px] px-[30px] md:px-[100px] relative before:[*] before:absolute before:z-[-999] before:right-0 before:bg-[#F5F8FD] before:h-[100%] before:w-[100%] before:md:w-[68%] before:rounded-[30px]"
+            >
+              <img
+                class="w-[300px] md:w-[600px] h-[300px] md:h-[538px] relative left-[60px] bottom-[-20px] mr-[100px]"
+                src="./Images/chiikennnn.png"
+                alt=""
+              />
+              <div class="chicken-menu w-full">
+                <h2 class="text-[40px] font-bold mb-[25px]">BBQ</h2>
+                <div
+                  class="box flex items-center justify-between pb-[20px] border-b-[2px] border-dashed border-[#000000]"
+                >
+                  <div class="text">
+                    <h3 class="text-[22px] font-medium">Sake BBQ sauce</h3>
+                    <p class="text-[#555555] text-[16px]">
+                      radish, black sesame seeds, coriander
+                    </p>
+                  </div>
+                  <span class="text-[22px] font-semibold text-[#F3274C]"
+                    >$9.00</span
+                  >
+                </div>
+                <div
+                  class="box flex items-center justify-between py-[20px] border-b-[2px] border-dashed border-[#000000]"
+                >
+                  <div class="text">
+                    <h3 class="text-[22px] font-medium">BBQ baby back ribs</h3>
+                    <p class="text-[#555555] text-[16px]">
+                      sticky Asian glaze, charred lime, chilli cashews
+                    </p>
+                  </div>
+                  <span class="text-[22px] font-semibold text-[#F3274C]"
+                    >$16.00</span
+                  >
+                </div>
+                <div
+                  class="box flex items-center justify-between py-[20px] border-b-[2px] border-dashed border-[#000000]"
+                >
+                  <div class="text">
+                    <h3 class="text-[22px] font-medium">Half smoked chicken</h3>
+                    <p class="text-[#555555] text-[16px]">
+                      miso butter glaze, charred lime wedge, sake bbq
+                    </p>
+                  </div>
+                  <span class="text-[22px] font-semibold text-[#F3274C]"
+                    >$34.00</span
+                  >
+                </div>
+                <div class="box flex items-center justify-between pt-[20px]">
+                  <div class="text">
+                    <h3 class="text-[22px] font-medium">
+                      Dusted chicken wings
+                    </h3>
+                    <p class="text-[#555555] text-[16px]">
+                      tossed in Korean hot sauce, pickled radish
+                    </p>
+                  </div>
+                  <span class="text-[22px] font-semibold text-[#F3274C]"
+                    >$40.00</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            id="tap2-content"
+            class="divtaps"
+            data-aos="zoom-in-up"
+            data-aos-duration="1500"
+          >
+            <div
+              class="flex flex-col md:flex-row items-center justify-between gap-6 py-[30px] px-[30px] md:px-[100px] relative before:[*] before:absolute before:z-[-999] before:right-0 before:bg-[#F5F8FD] before:h-[100%] before:w-[100%] before:md:w-[68%] before:rounded-[30px]"
+            >
+              <img
+                class="w-[300px] md:w-[600px] h-[300px] md:h-[538px] relative left-[60px] bottom-[-20px] mr-[100px]"
+                src="./Images/pizza-1.webp"
+                alt=""
+              />
+              <div class="chicken-menu w-full">
+                <h2 class="text-[40px] font-bold mb-[25px]">BBQ</h2>
+                <div
+                  class="box flex items-center justify-between pb-[20px] border-b-[2px] border-dashed border-[#000000]"
+                >
+                  <div class="text">
+                    <h3 class="text-[22px] font-medium">Sake BBQ sauce</h3>
+                    <p class="text-[#555555] text-[16px]">
+                      radish, black sesame seeds, coriander
+                    </p>
+                  </div>
+                  <span class="text-[22px] font-semibold text-[#F3274C]"
+                    >$9.00</span
+                  >
+                </div>
+                <div
+                  class="box flex items-center justify-between py-[20px] border-b-[2px] border-dashed border-[#000000]"
+                >
+                  <div class="text">
+                    <h3 class="text-[22px] font-medium">BBQ baby back ribs</h3>
+                    <p class="text-[#555555] text-[16px]">
+                      sticky Asian glaze, charred lime, chilli cashews
+                    </p>
+                  </div>
+                  <span class="text-[22px] font-semibold text-[#F3274C]"
+                    >$16.00</span
+                  >
+                </div>
+                <div
+                  class="box flex items-center justify-between py-[20px] border-b-[2px] border-dashed border-[#000000]"
+                >
+                  <div class="text">
+                    <h3 class="text-[22px] font-medium">Half smoked chicken</h3>
+                    <p class="text-[#555555] text-[16px]">
+                      miso butter glaze, charred lime wedge, sake bbq
+                    </p>
+                  </div>
+                  <span class="text-[22px] font-semibold text-[#F3274C]"
+                    >$34.00</span
+                  >
+                </div>
+                <div class="box flex items-center justify-between pt-[20px]">
+                  <div class="text">
+                    <h3 class="text-[22px] font-medium">
+                      Dusted chicken wings
+                    </h3>
+                    <p class="text-[#555555] text-[16px]">
+                      tossed in Korean hot sauce, pickled radish
+                    </p>
+                  </div>
+                  <span class="text-[22px] font-semibold text-[#F3274C]"
+                    >$40.00</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            id="tap3-content"
+            class="divtaps"
+            data-aos="zoom-in-up"
+            data-aos-duration="1500"
+          >
+            <div
+              class="flex flex-col md:flex-row items-center justify-between gap-6 py-[30px] px-[30px] md:px-[100px] relative before:[*] before:absolute before:z-[-999] before:right-0 before:bg-[#F5F8FD] before:h-[100%] before:w-[100%] before:md:w-[68%] before:rounded-[30px]"
+            >
+              <img
+                class="w-[300px] md:w-[600px] h-[300px] md:h-[538px] relative left-[60px] bottom-[-20px] mr-[100px]"
+                src="./Images/coffe.webp"
+                alt=""
+              />
+              <div class="chicken-menu w-full">
+                <h2 class="text-[40px] font-bold mb-[25px]">BBQ</h2>
+                <div
+                  class="box flex items-center justify-between pb-[20px] border-b-[2px] border-dashed border-[#000000]"
+                >
+                  <div class="text">
+                    <h3 class="text-[22px] font-medium">Sake BBQ sauce</h3>
+                    <p class="text-[#555555] text-[16px]">
+                      radish, black sesame seeds, coriander
+                    </p>
+                  </div>
+                  <span class="text-[22px] font-semibold text-[#F3274C]"
+                    >$9.00</span
+                  >
+                </div>
+                <div
+                  class="box flex items-center justify-between py-[20px] border-b-[2px] border-dashed border-[#000000]"
+                >
+                  <div class="text">
+                    <h3 class="text-[22px] font-medium">BBQ baby back ribs</h3>
+                    <p class="text-[#555555] text-[16px]">
+                      sticky Asian glaze, charred lime, chilli cashews
+                    </p>
+                  </div>
+                  <span class="text-[22px] font-semibold text-[#F3274C]"
+                    >$16.00</span
+                  >
+                </div>
+                <div
+                  class="box flex items-center justify-between py-[20px] border-b-[2px] border-dashed border-[#000000]"
+                >
+                  <div class="text">
+                    <h3 class="text-[22px] font-medium">Half smoked chicken</h3>
+                    <p class="text-[#555555] text-[16px]">
+                      miso butter glaze, charred lime wedge, sake bbq
+                    </p>
+                  </div>
+                  <span class="text-[22px] font-semibold text-[#F3274C]"
+                    >$34.00</span
+                  >
+                </div>
+                <div class="box flex items-center justify-between pt-[20px]">
+                  <div class="text">
+                    <h3 class="text-[22px] font-medium">
+                      Dusted chicken wings
+                    </h3>
+                    <p class="text-[#555555] text-[16px]">
+                      tossed in Korean hot sauce, pickled radish
+                    </p>
+                  </div>
+                  <span class="text-[22px] font-semibold text-[#F3274C]"
+                    >$40.00</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            id="tap4-content"
+            class="divtaps"
+            data-aos="zoom-in-up"
+            data-aos-duration="1500"
+          >
+            <div
+              class="flex flex-col md:flex-row items-center justify-between gap-6 py-[30px] px-[30px] md:px-[100px] relative before:[*] before:absolute before:z-[-999] before:right-0 before:bg-[#F5F8FD] before:h-[100%] before:w-[100%] before:md:w-[68%] before:rounded-[30px]"
+            >
+              <img
+                class="w-[300px] md:w-[600px] h-[300px] md:h-[538px] relative left-[60px] bottom-[-20px] mr-[100px]"
+                src="./Images/pizza-1.webp"
+                alt=""
+              />
+              <div class="chicken-menu w-full">
+                <h2 class="text-[40px] font-bold mb-[25px]">BBQ</h2>
+                <div
+                  class="box flex items-center justify-between pb-[20px] border-b-[2px] border-dashed border-[#000000]"
+                >
+                  <div class="text">
+                    <h3 class="text-[22px] font-medium">Sake BBQ sauce</h3>
+                    <p class="text-[#555555] text-[16px]">
+                      radish, black sesame seeds, coriander
+                    </p>
+                  </div>
+                  <span class="text-[22px] font-semibold text-[#F3274C]"
+                    >$9.00</span
+                  >
+                </div>
+                <div
+                  class="box flex items-center justify-between py-[20px] border-b-[2px] border-dashed border-[#000000]"
+                >
+                  <div class="text">
+                    <h3 class="text-[22px] font-medium">BBQ baby back ribs</h3>
+                    <p class="text-[#555555] text-[16px]">
+                      sticky Asian glaze, charred lime, chilli cashews
+                    </p>
+                  </div>
+                  <span class="text-[22px] font-semibold text-[#F3274C]"
+                    >$16.00</span
+                  >
+                </div>
+                <div
+                  class="box flex items-center justify-between py-[20px] border-b-[2px] border-dashed border-[#000000]"
+                >
+                  <div class="text">
+                    <h3 class="text-[22px] font-medium">Half smoked chicken</h3>
+                    <p class="text-[#555555] text-[16px]">
+                      miso butter glaze, charred lime wedge, sake bbq
+                    </p>
+                  </div>
+                  <span class="text-[22px] font-semibold text-[#F3274C]"
+                    >$34.00</span
+                  >
+                </div>
+                <div class="box flex items-center justify-between pt-[20px]">
+                  <div class="text">
+                    <h3 class="text-[22px] font-medium">
+                      Dusted chicken wings
+                    </h3>
+                    <p class="text-[#555555] text-[16px]">
+                      tossed in Korean hot sauce, pickled radish
+                    </p>
+                  </div>
+                  <span class="text-[22px] font-semibold text-[#F3274C]"
+                    >$40.00</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End About  -->
+
+    <!-- Start Menu  -->
+    <div class="menu my-[50px]">
+      <div class="container">
+        <div
+          class="main-title text-center mb-[50px] md:mb-[140px]"
+          data-aos="fade-down"
+          data-aos-duration="1500"
+        >
+          <h1
+            class="text-[60px] font-bold relative w-fit m-auto after:[*] after:absolute after:w-[270px] after:h-[10px] after:bg-[#FFD40D] after:rounded-[30px] after:bottom-0 after:left-[50%] after:translate-x-[-50%]"
+          >
+            Discover Menu
+          </h1>
+        </div>
+        <div
+          class="menu mb-[100px] grid grid-flow-row md:grid-flow-col justify-between gap-[100px]"
+          data-aos="zoom-out-up"
+          data-aos-duration="1500"
+        >
+          <div
+            class="box duration-300 hover:translate-y-[-20px] grid-cols-12 md:grid-cols-6 relative w-[400px] md:w-[630px] h-[335px] p-[50px] bg-[url('./images/menu-1.webp')] bg-cover bg-center bg-no-repeat rounded-[30px]"
+          >
+            <div class="text">
+              <h2
+                class="md:text-[50px] text-[40px] mb-[20px] md:mb-0 font-bold text-[#FFFFFF]"
+              >
+                Steaks & BBQ
+              </h2>
+              <p class="text-[18px] max-w-[260px] text-[#FFFFFF]">
+                canonical classics to obscure tiki drinks
+              </p>
+            </div>
+            <div
+              class="price absolute bottom-[-30px] left-[50px] w-[140px] h-[140px] bg-[#FFD40D] rounded-[50%] flex items-center justify-center flex-col"
+            >
+              <h3 class="text-[35px] font-bold text-[#F3274C]">$120</h3>
+              <p class="text-[16px] font-semibold">person</p>
+            </div>
+          </div>
+          <div
+            class="box duration-300 hover:translate-y-[-20px] grid-cols-12 md:grid-cols-6 relative w-[400px] md:w-[630px] h-[335px] p-[50px] bg-[url('./images/menu-1.webp')] bg-cover bg-center bg-no-repeat rounded-[30px]"
+          >
+            <div class="text">
+              <h2
+                class="md:text-[50px] text-[40px] mb-[20px] md:mb-0 font-bold text-[#FFFFFF]"
+              >
+                Steaks & BBQ
+              </h2>
+              <p class="text-[18px] max-w-[260px] text-[#FFFFFF]">
+                canonical classics to obscure tiki drinks
+              </p>
+            </div>
+            <div
+              class="price absolute bottom-[-30px] left-[50px] w-[140px] h-[140px] bg-[#FFD40D] rounded-[50%] flex items-center justify-center flex-col"
+            >
+              <h3 class="text-[35px] font-bold text-[#F3274C]">$120</h3>
+              <p class="text-[16px] font-semibold">person</p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="mb-[-240px] relative z-[99999] px-[60px] py-[70px] w-full h-fit md:h-[375px] bg-[url('./images/table.webp')] bg-cover bg-center bg-no-repeat rounded-[30px]"
+          data-aos="zoom-in-up"
+          data-aos-duration="1500"
+        >
+          <div class="flex flex-col md:flex-row items-center justify-between">
+            <div class="text text-white mb-[30px]">
+              <h2
+                class="text-[55px] font-semibold max-w-[225px] leading-[60px] border-b-[3px] border-[#FFD40D]"
+              >
+                RESERVE A TABLE
+              </h2>
+              <p class="text-[18px] md:mt-[50px] mt-[30px]">
+                Discover our New Menu !
+              </p>
+            </div>
+            <div
+              class="flex flex-col md:flex-row items-center gap-0 md:gap-[30px]"
+            >
+              <div class="input-box flex flex-col gap-[30px]">
+                <div class="input-field">
+                  <input
+                    class="h-[60px] w-[370px] px-[20px] shadow-none placeholder:px-[5px] outline-none rounded-[10px] caret-[#f3274c]"
+                    type="text"
+                    name=""
+                    placeholder="No of Guest"
+                  />
+                </div>
+                <div class="input-field">
+                  <input
+                    class="h-[60px] w-[370px] px-[20px] shadow-none outline-none placeholder:px-[5px] rounded-[10px] caret-[#f3274c]"
+                    type="text"
+                    name=""
+                    placeholder="Full Name"
+                  />
+                </div>
+              </div>
+              <div class="input-box flex flex-col gap-[30px] mt-[30px] md:mt-0">
+                <div class="input-field flex gap-[30px]">
+                  <input
+                    class="h-[60px] w-[170px] px-[20px] shadow-none outline-none placeholder:px-[5px] rounded-[10px] caret-[#f3274c]"
+                    type="text"
+                    name=""
+                    placeholder="Date"
+                  />
+                  <input
+                    class="h-[60px] w-[170px] px-[20px] shadow-none outline-none placeholder:px-[5px] rounded-[10px] caret-[#f3274c]"
+                    type="text"
+                    name=""
+                    placeholder="Time"
+                  />
+                </div>
+                <div class="input-field">
+                  <input
+                    class="h-[60px] w-[370px] px-[20px] shadow-none outline-none placeholder:px-[5px] rounded-[10px] caret-[#f3274c]"
+                    type="text"
+                    name=""
+                    placeholder="Phone No"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex justify-end md:mt-0 mt-[50px]">
+            <button
+              class="btn block hover:scale-105 relative hover:before:left-[-7px] hover:before:w-[110%] before:[*] before:absolute before:w-[95%] before:h-[69px] before:border-[3px] before:border-[#FFD40D] before:left-[13px] before:top-[-6px] before:rounded-[13px] before:duration-300 before:ease-in-out duration-300 ease-in-out hover:bg-[#FFC222] hover:before:border-[#FFC222] w-[130px] h-[57px] bg-[#FFD40D] rounded-lg text-[18px] text-white text-[18px] font-medium"
+            >
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Menu  -->
+
+    <!-- Start Dishes  -->
+    <div id="Services" class="dishes bg-[#F5F8FD] pt-[300px] pb-[150px]">
+      <div class="container">
+        <div
+          class="main-title text-center mb-[20px]"
+          data-aos="fade-down"
+          data-aos-duration="1500"
+        >
+          <h1
+            class="text-[50px] md:text-[60px] font-bold relative w-fit m-auto after:[*] after:absolute after:w-[270px] after:h-[10px] after:bg-[#FFD40D] after:rounded-[30px] after:bottom-0 after:left-[50%] after:translate-x-[-50%]"
+          >
+            Featured Dishes
+          </h1>
+        </div>
+        <div class="owl-carousel owl-carousel-1 owl-theme">
+          <div
+            class="item p-[20px]"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <div
+              class="box hover:scale-[1.05] group duration-300 w-[350px] md:w-[450px] md:h-[500px] h-[450px] p-[30px] border-[#FFD40D] border-[5px] rounded-[30px] relative"
+            >
+              <div
+                class="image relative before:[*] before:absolute md:group-hover:before:h-[350px] md:before:w-[350px] before:w-[280px] md:before:h-[175px] before:h-[140px] before:bg-[#F3274C] before:z-[-5555] before:left-0 before:top-0 before:right-0 before:bottom-0 before:m-auto md:group-hover:before:rounded-[50%] before:rounded-[100px]"
+              >
+                <img src="./Images/chiikennnn.png" alt="" />
+              </div>
+              <h3 class="text-[20px] font-semibold mt-[30px]">
+                Crispy Fried Chicken
+              </h3>
+              <p class="text-[28px] text-[#555555] font-semibold">
+                <span class="text-[18px] text-[#555555] font-semibold">
+                  <del>$14.85</del></span
+                ><span class="text-[#F3274C] ms-[5px]">$</span>10.85
+              </p>
+              <div
+                class="sale w-[70px] h-[70px] rounded-[50%] text-[18px] bg-[#FFD40D] font-semibold flex items-center justify-center absolute top-[15px] left-[15px]"
+              >
+                SALE
+              </div>
+              <div
+                class="shop w-[50px] h-[50px] bg-[#FFD40D] rounded-[7px] absolute right-[30px] bottom-[20px] flex items-center justify-center hover:scale-110 duration-300 cursor-pointer"
+              >
+                <i class="fa-solid fa-bag-shopping text-[25px]"></i>
+              </div>
+            </div>
+          </div>
+          <div
+            class="item p-[20px]"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
+            <div
+              class="box hover:scale-[1.05] group duration-300 w-[350px] md:w-[450px] md:h-[500px] h-[450px] p-[30px] border-[#FFD40D] border-[5px] rounded-[30px] relative"
+            >
+              <div
+                class="image relative before:[*] before:absolute md:group-hover:before:h-[350px] md:before:w-[350px] before:w-[280px] md:before:h-[175px] before:h-[140px] before:bg-[#F3274C] before:z-[-5555] before:left-0 before:top-0 before:right-0 before:bottom-0 before:m-auto md:group-hover:before:rounded-[50%] before:rounded-[100px]"
+              >
+                <img src="./Images/pizza-1.webp" alt="" />
+              </div>
+              <h3 class="text-[20px] font-semibold mt-[30px]">
+                Shroom Bacon Burger
+              </h3>
+              <p class="text-[28px] text-[#555555] font-semibold">
+                <span class="text-[18px] text-[#555555] font-semibold">
+                  <del>$21.85</del></span
+                ><span class="text-[#F3274C] ms-[5px]">$</span>11.85
+              </p>
+              <div
+                class="sale w-[70px] h-[70px] rounded-[50%] text-[18px] bg-[#FFD40D] font-semibold flex items-center justify-center absolute top-[15px] left-[15px]"
+              >
+                SALE
+              </div>
+              <div
+                class="shop w-[50px] h-[50px] bg-[#FFD40D] rounded-[7px] absolute right-[30px] bottom-[20px] flex items-center justify-center hover:scale-110 duration-300 cursor-pointer"
+              >
+                <i class="fa-solid fa-bag-shopping text-[25px]"></i>
+              </div>
+            </div>
+          </div>
+          <div
+            class="item p-[20px]"
+            data-aos="fade-up"
+            data-aos-duration="3000"
+          >
+            <div
+              class="box hover:scale-[1.05] group duration-300 w-[350px] md:w-[450px] md:h-[500px] h-[450px] p-[30px] border-[#FFD40D] border-[5px] rounded-[30px] relative"
+            >
+              <div
+                class="image relative before:[*] before:absolute md:group-hover:before:h-[350px] md:before:w-[350px] before:w-[280px] md:before:h-[175px] before:h-[140px] before:bg-[#F3274C] before:z-[-5555] before:left-0 before:top-0 before:right-0 before:bottom-0 before:m-auto md:group-hover:before:rounded-[50%] before:rounded-[100px]"
+              >
+                <img src="./Images/coffe.webp" alt="" />
+              </div>
+              <h3 class="text-[20px] font-semibold mt-[30px]">
+                Delicious Black Coffee
+              </h3>
+              <p class="text-[28px] text-[#555555] font-semibold">
+                <span class="text-[18px] text-[#555555] font-semibold">
+                  <del>$14.85</del></span
+                ><span class="text-[#F3274C] ms-[5px]">$</span>11.85
+              </p>
+              <div
+                class="sale w-[70px] h-[70px] rounded-[50%] text-[18px] bg-[#FFD40D] font-semibold flex items-center justify-center absolute top-[15px] left-[15px]"
+              >
+                SALE
+              </div>
+              <div
+                class="shop w-[50px] h-[50px] bg-[#FFD40D] rounded-[7px] absolute right-[30px] bottom-[20px] flex items-center justify-center hover:scale-110 duration-300 cursor-pointer"
+              >
+                <i class="fa-solid fa-bag-shopping text-[25px]"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Dishes  -->
+
+    <!-- Start Testimonials  -->
+    <div class="testimonials pt-[100px] pb-[20px] md:pb-[200px]">
+      <div class="container">
+        <div class="title" data-aos="fade-right" data-aos-duration="1800">
+          <h1 class="text-[18px] text-[#F3274C] font-semibold">
+            Testimonials & Reviews
+          </h1>
+          <p
+            class="text-[60px] font-bold max-w-[400px] leading-[60px] mt-[20px]"
+          >
+            Our Customar Feedbacks
+          </p>
+        </div>
+        <div class="box flex items-center gap-[60px] mt-[50px]">
+          <div class="review max-w-[610px] max-h-[310px] border-[5px] border-[#FFD40D] rounded-[30px] p-[20px] md:p-[30px]"
+            data-aos="fade-right"
+            data-aos-duration="2500"
+          >
+            <p class="md:text-[24px] text-[15px] leading-[30px] text-[#555555] md:leading-[40px]">
+              A good restaurant is like a vacation; it transports you, and it
+              becomes a lot more than just about the food. All great deeds and
+              all great thoughts
+            </p>
+            <div class="profile flex items-center justify-between mt-[20px]">
+              <h3 class="text-[26px] font-semibold">Bratlee Hamint</h3>
+              <img c src="./Images/profile.webp" alt="" />
+            </div>
+          </div>
+          <div class="images flex relative w-full">
+            <div
+              class="absolute top-[-380px] right-[37%] z-[99] w-[292px] h-[292px]"
+              data-aos="fade-down"
+              data-aos-duration="2000"
+            >
+              <img src="./Images/coffe-banner.webp" alt="" />
+            </div>
+            <div
+              class="absolute left-0 top-[-145px] w-[292px] h-[292px] before:[*] before:absolute before:w-full before:h-full before:bg-[#F3274C] before:rounded-[30px] before:opacity-[0.5]"
+              data-aos="fade-up-right"
+              data-aos-duration="1500"
+            >
+              <img
+                class="rounded-[30px]"
+                src="./Images/dinner-banner.png"
+                alt=""
+              />
+            </div>
+            <div
+              class="absolute right-[200px] bottom-[-230px] w-[292px] h-[292px]"
+              data-aos="fade-up-left"
+              data-aos-duration="2500"
+            >
+              <img src="./Images/icecreem-banner.webp" alt="" />
+            </div>
+          </div>
+        </div>
+        <!-- <div class="box flex items-center justify-between gap-[60px] mt-[50px]">
+          <div class="review max-w-[610px] max-h-[310px] border-[5px] border-[#FFD40D] rounded-[30px] p-[30px]" data-aos="fade-right" data-aos-duration="2500">
+            <p class="text-[24px] text-[#555555] leading-[40px]">
+              A good restaurant is like a vacation; it  
+              transports you, and it becomes a lot more
+              than just about the food. All great deeds
+              and all great thoughts
+            </p>
+            <div class="profile flex items-center justify-between mt-[20px]">
+              <h3 class="text-[26px] font-semibold">Bratlee Hamint</h3>
+              <img c src="./Images/profile.webp" alt="">
+            </div>
+          </div>
+          <div class="images flex relative w-full">
+            <div class="absolute top-0 right-0 z-[99] w-[292px] h-[292px]" data-aos="fade-down" data-aos-duration="2000">
+              <img src="./Images/coffe-banner.webp" alt="">
+            </div>
+            <div class="absolute left-0 top-[-145px] w-[292px] h-[292px] before:[*] before:absolute before:w-full before:h-full before:bg-[#F3274C] before:rounded-[30px] before:opacity-[0.5]" data-aos="fade-up-right" data-aos-duration="1500">
+              <img class="rounded-[30px]" src="./Images/dinner-banner.png" alt="">
+            </div>
+            <div class="absolute right-[200px] bottom-[-230px] w-[292px] h-[292px]" data-aos="fade-up-left" data-aos-duration="2500">
+              <img src="./Images/icecreem-banner.webp" alt="">
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+    <!-- End Testimonials  -->
+
+    <!-- Start CHIEFS  -->
+    <div class="chief pb-[200px] md:pb-[300px] pt-[100px]">
+      <div class="container">
+        <div class="main-title text-center mb-[20px]"
+          data-aos="fade-down"
+          data-aos-duration="1500"
+        >
+          <h1
+            class="text-[40px] md:text-[50px] md:text-[60px] font-bold relative w-fit m-auto after:[*] after:absolute after:w-[270px] after:h-[10px] after:bg-[#FFD40D] after:rounded-[30px] after:bottom-0 after:left-[50%] after:translate-x-[-50%]"
+          >
+            Meet Our Experts
+          </h1>
+        </div>
+        <div
+          class="flex flex-col md:flex-row items-center justify-between gap-[220px]"
+        >
+          <div class="chief-1 relative" data-aos="fade-up" data-aos-duration="2000">
+            <img src="./Images/chef1.png.webp" alt="" />
+            <div
+              class="flex items-center justify-center flex-col absolute left-[50%] translate-x-[-50%] bottom-[-200px] w-[380px] h-[380px] rounded-[50%] bg-white border-[5px] border-[#E4E4E4]"
+            >
+              <h2 class="text-[18px] text-[#F3274C] font-semibold">
+                Dessert specialist
+              </h2>
+              <p class="text-[35px] font-bold">Thomas Walim</p>
+              <div class="circles mt-[20px] flex items-center gap-[20px]">
+                <div class="w-[50px] h-[50px] bg-[#F5F8FD] rounded-[50%]"></div>
+                <div class="w-[50px] h-[50px] bg-[#F5F8FD] rounded-[50%]"></div>
+                <div class="w-[50px] h-[50px] bg-[#F5F8FD] rounded-[50%]"></div>
+              </div>
+              <img class="mt-[30px]" src="./Images/name-chef.png.webp" alt="" />
+            </div>
+          </div>
+          <div class="chief-2 relative" data-aos="fade-up" data-aos-duration="2500">
+            <img src="./Images/chef2.png.webp" alt="" />
+            <div
+              class="flex items-center justify-center flex-col absolute left-[50%] translate-x-[-50%] bottom-[-200px] w-[380px] h-[380px] rounded-[50%] bg-white border-[5px] border-[#E4E4E4]"
+            >
+              <h2 class="text-[18px] text-[#F3274C] font-semibold">
+                Chef Master
+              </h2>
+              <p class="text-[35px] font-bold">James Jhonson</p>
+              <div class="circles mt-[20px] flex items-center gap-[20px]">
+                <div class="w-[50px] h-[50px] bg-[#F5F8FD] rounded-[50%]"></div>
+                <div class="w-[50px] h-[50px] bg-[#F5F8FD] rounded-[50%]"></div>
+                <div class="w-[50px] h-[50px] bg-[#F5F8FD] rounded-[50%]"></div>
+              </div>
+              <img class="mt-[30px]" src="./Images/name-chef.png.webp" alt="" />
+            </div>
+          </div>
+          <div class="chief-3 relative" data-aos="fade-up" data-aos-duration="3000">
+            <img src="./Images/chef3-1.png.webp" alt="" />
+            <div
+              class="flex items-center justify-center flex-col absolute left-[50%] translate-x-[-50%] bottom-[-200px] w-[380px] h-[380px] rounded-[50%] bg-white border-[5px] border-[#E4E4E4]"
+            >
+              <h2 class="text-[18px] text-[#F3274C] font-semibold">
+                Dessert specialist
+              </h2>
+              <p class="text-[35px] font-bold">Room Minal</p>
+              <div class="circles mt-[20px] flex items-center gap-[20px]">
+                <div class="w-[50px] h-[50px] bg-[#F5F8FD] rounded-[50%]"></div>
+                <div class="w-[50px] h-[50px] bg-[#F5F8FD] rounded-[50%]"></div>
+                <div class="w-[50px] h-[50px] bg-[#F5F8FD] rounded-[50%]"></div>
+              </div>
+              <img class="mt-[30px]" src="./Images/name-chef.png.webp" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End CHIEFS  -->
+
+    <!-- Start App  -->
+    <div id="Contact" class="app overflow-hidden my-[100px] py-[100px] md:py-[150px] bg-[#F5F8FD] relative md:before:w-[45%] md:before:h-[60%] before:[*] before:absolute before:z-0 before:w-[100%] before:h-[100%] before:bg-[#F3274C] before:right-0 before:top-[50%] before:translate-y-[-50%] md:before:rounded-l-[400px] before:rounded-l-[0px]"
+    >
+      <div class="container">
+        <div class="flex items-center justify-between">
+          <div class="content" data-aos="fade-right" data-aos-duration="1500">
+            <h1
+              class="md:text-[#F3274C] text-white text-[18px] font-semibold tracking-[2px]"
+            >
+              Best App For Foods Ordering
+            </h1>
+            <p
+              class="md:text-[50px] text-[30px] font-bold leading-[40px] md:leading-[60px] max-w-[350px] md:max-w-[600px] mt-[10px]"
+            >
+              Manage Your Restaurant Anytime! Anywhere!
+            </p>
+            <ul class="mt-[30px] mb-[40px]">
+              <li
+                class="md:text-[#555555] text-white text-[18px] relative flex items-center ps-[25px] before:[*] before:absolute before:left-0 before:w-[18px] before:h-[18px] before:rounded-[50%] before:bg-white before:border-[6px] before:border-[#FFD40D]"
+              >
+                Higher Reach - Minimal Effort
+              </li>
+              <li
+                class="md:text-[#555555] text-white text-[18px] my-[5px] relative flex items-center ps-[25px] before:[*] before:absolute before:left-0 before:w-[18px] before:h-[18px] before:rounded-[50%] before:bg-white before:border-[6px] before:border-[#FFD40D]"
+              >
+                Showcase your Brand
+              </li>
+              <li
+                class="md:text-[#555555] text-white text-[18px] relative flex items-center ps-[25px] before:[*] before:absolute before:left-0 before:w-[18px] before:h-[18px] before:rounded-[50%] before:bg-white before:border-[6px] before:border-[#FFD40D]"
+              >
+                Exclusive offers & discounts
+              </li>
+            </ul>
+            <div class="flex items-center gap-[20px]">
+              <button
+                class="w-[180px] h-[60px] md:bg-[#F3274C] bg-white me:text-white text-black text-[18px] rounded-[12px] hover:bg-[#FFD40D] hover:border-[2px] hover:border-[#F3274C] hover:text-black duration-300 flex items-center justify-center"
+              >
+                <i class="fa-brands fa-google-play pe-[8px] text-[25px]"></i>
+                <p>Google Play</p>
+              </button>
+              <button
+                class="w-[180px] h-[60px] bg-[#000000] text-white text-[18px] rounded-[12px] hover:bg-[#F3274C] hover:border-[2px] hover:border-black duration-300 flex items-center justify-center"
+              >
+                <i class="fa-brands fa-apple pe-[8px] text-[25px]"></i>
+                <p>App Store</p>
+              </button>
+            </div>
+          </div>
+          <div class="image group hidden md:block">
+            <div
+              class="absolute bottom-0 right-[300px]"
+              data-aos="fade-up"
+              data-aos-duration="3000"
+            >
+              <img src="./Images/img-phone-400x487.png.webp" alt="" />
+            </div>
+            <img
+              class="absolute right-[1%] bottom-[145px]"
+              src="./Images/img-banner3.png.webp"
+              alt=""
+              data-aos="fade-left"
+              data-aos-duration="2000"
+            />
+            <img
+              class="absolute right-[10%] top-[80px]"
+              src="./Images/img-banner4.png.webp"
+              alt=""
+              data-aos="fade-down"
+              data-aos-duration="2000"
+            />
+            <img
+              class="absolute right-[35%] duration-500 group-hover:rotate-[15deg]"
+              src="./Images/img-grap.png.webp"
+              alt=""
+              data-aos="fade-up-right"
+              data-aos-duration="1500"
+            />
+            <img
+              class="absolute right-[45%] top-[14%]"
+              src="./Images/img-left.png.webp"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End App  -->
+
+    <!-- Start News  -->
+    <div class="news py-[100px]">
+      <div class="container">
+        <div class="main-title text-center mb-[45px]"
+          data-aos="fade-down"
+          data-aos-duration="1500"
+        >
+          <h1
+            class="text-[40px] md:text-[50px] md:text-[60px] font-bold relative w-fit m-auto after:[*] after:absolute after:w-[270px] after:h-[10px] after:bg-[#FFD40D] after:rounded-[30px] after:bottom-0 after:left-[50%] after:translate-x-[-50%]"
+          >
+            Recent News
+          </h1>
+        </div>
+        <div class="flex flex-col md:flex-row items-center justify-between gap-[30px] md:gap-0">
+          <div class="box flex items-center shadow-2xl md:shadow-none gap-[40px] hover:shadow-2xl p-[10px] rounded-[30px] hover:scale-[1.05] duration-300"
+          >
+            <img
+              class="md:w-[260px] w-[160px] h-[175px] md:h-[275px] rounded-[20px]"
+              src="./Images/img-blog6-660x700.jpg.webp"
+              alt=""
+              data-aos="zoom-in"
+              data-aos-duration="2500"
+            />
+            <div class="content" data-aos="fade-up" data-aos-duration="3000">
+              <span
+                class="rounded-[7px] bg-[#FFD40D] font-semibold py-[2px] px-[5px]"
+                >April 6, 2023</span
+              >
+              <h1 class="font-bold text-[18px] md:text-[30px] max-w-[250px] my-[10px] md:my-[20px]">
+                Creamy Chicken Alfredo
+              </h1>
+              <div class="profile flex items-center gap-[10px]">
+                <img
+                  class="md:w-[55px] md:h-[55px] w-[45px] h-[45px]"
+                  src="./Images/profile.webp"
+                  alt=""
+                />
+                <span class="font-bold text-[13px] md:text-[16px]">Willimes Thomas</span>
+              </div>
+            </div>
+          </div>
+          <div class="box flex items-center shadow-2xl md:shadow-none gap-[40px] hover:shadow-2xl p-[10px] rounded-[30px] hover:scale-[1.05] duration-300"
+          >
+            <img
+              class="md:w-[260px] w-[160px] h-[175px] md:h-[275px] rounded-[20px]"
+              src="./Images/img-blog5-660x700.jpg.webp"
+              alt=""
+              data-aos="zoom-in"
+              data-aos-duration="2500"
+            />
+            <div class="content" data-aos="fade-up" data-aos-duration="3000">
+              <span
+                class="rounded-[7px] bg-[#FFD40D] font-semibold py-[2px] px-[5px]"
+                >April 6, 2023</span
+              >
+              <h1 class="font-bold text-[18px] md:text-[30px] max-w-[250px] my-[10px] md:my-[20px]">
+                Creamy Chicken Alfredo
+              </h1>
+              <div class="profile flex items-center gap-[10px]">
+                <img
+                  class="md:w-[55px] md:h-[55px] w-[45px] h-[45px]"
+                  src="./Images/profile.webp"
+                  alt=""
+                />
+                <span class="font-bold text-[13px] md:text-[16px]">Willimes Thomas</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="relative group duration-300 overflow-hidden grid grid-cols-2 md:grid-cols-4 auto-rows-[100px] md:auto-rows-[200px] gap-[20px] mt-[100px]">
+          <div class="row-span-2  group-hover:blur-sm hover:!blur-0  transition duration-300 overflow-hidden rounded-[20px] border-yellow border-[2px]"  data-aos="zoom-in-up" data-aos-duration="1200">
+            <img
+              src="./Images/grid-1.webp"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="row-span-3  group-hover:blur-sm hover:!blur-0  transition duration-300 overflow-hidden rounded-[20px] border-yellow border-[2px]"  data-aos="zoom-in-up" data-aos-duration="1400">
+            <img
+              src="./Images/grid-4.webp"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="overflow-hidden  group-hover:blur-sm hover:!blur-0 transition duration-300 rounded-[20px] border-yellow border-[2px]"  data-aos="zoom-in-up" data-aos-duration="1600">
+            <img
+              src="./Images/grid-3.webp"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="row-span-2  group-hover:blur-sm hover:!blur-0 transition duration-300 overflow-hidden rounded-[20px] border-yellow border-[2px]"  data-aos="zoom-in-up" data-aos-duration="1800">
+            <img
+              src="./Images/grid-2.webp"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="row-span-2  group-hover:blur-sm hover:!blur-0 transition duration-300 overflow-hidden rounded-[20px] border-yellow border-[2px]"  data-aos="zoom-in-up" data-aos-duration="2000">
+            <img
+              src="./Images/grid-5.webp"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="overflow-hidden  group-hover:blur-sm hover:!blur-0 transition duration-300 rounded-[20px] border-yellow border-[2px]"  data-aos="zoom-in-up" data-aos-duration="2200">
+            <img
+              src="./Images/grid-6.webp"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="overflow-hidden  group-hover:blur-sm hover:!blur-0 transition duration-300 rounded-[20px] border-yellow border-[2px]"  data-aos="zoom-in-up" data-aos-duration="2400">
+            <img
+              src="./Images/grid-7.webp"
+              class="w-full h-full object-cover"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End News  -->
+
+    <!-- Start Footer  -->
+    <footer class="bg-[#F5F8FD] md:pb-[40px] md:pt-[100px] md:px-[150px] pt-[50px] px-[20px] pb-[20px] relative">
+      <div class="container">
+        <div class="flex flex-col md:flex-row items-start justify-between gap-[30px] md:gap-0 pb-[50px] md:pb-[100px] border-b-[10px] border-[#FFD40D] relative z-50"
+        >
+          <div class="logo-card bg-[#F3274C] rounded-[30px] p-[20px] flex flex-col justify-between w-[360px] md:w-[390px]"
+          >
+            <svg
+              width="174"
+              height="114"
+              viewBox="0 0 174 114"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M141.891 54.4645C142.079 54.5325 142.216 54.5666 142.356 54.5804C143.066 54.6506 143.63 54.9413 143.777 55.6893C143.932 56.4823 143.594 57.2299 142.869 57.4056C141.689 57.6914 141.683 58.4416 141.709 59.3554C141.728 60.0013 141.639 60.6502 141.6 61.2979C141.56 61.9648 141.821 62.3884 142.535 62.4484C143.419 62.5226 144.046 62.8866 144.138 63.8633C144.222 64.7553 143.809 65.4288 142.889 65.8699C140.807 66.8689 138.087 65.6113 137.442 63.3675C137.004 61.8455 137.104 60.2886 137.09 58.7379C137.079 57.5383 136.74 57.315 135.602 57.7708C135.002 58.0113 134.438 57.8866 133.884 57.6205C133.289 57.3345 132.673 57.145 132 57.2234C131.703 57.258 131.428 57.3532 131.346 57.6702C131.247 58.0501 131.519 58.2593 131.803 58.3907C132.624 58.7707 133.452 59.1357 134.289 59.4771C135.347 59.9086 136.259 60.4891 136.638 61.6406C137.134 63.1487 136.475 64.7932 134.951 65.5842C132.595 66.8076 130.248 66.525 127.965 65.3292C127.375 65.0198 127.141 64.4603 127.213 63.6898C125.916 65.8107 123.549 66.8223 121.228 66.3313C118.995 65.8591 117.31 63.9297 117.028 61.558C116.748 59.215 116.991 57.0574 118.916 55.3724C120.638 53.8662 123.791 53.8086 125.511 55.3094C127.331 56.8977 126.922 59.5697 124.697 60.606C123.538 61.1453 122.293 61.1973 121.045 61.233C120.853 61.2385 120.655 61.1314 120.468 61.2586C120.695 62.477 122.185 63.3268 123.47 62.9697C123.997 62.8234 124.451 62.5427 124.881 62.2111C126.239 61.1623 126.696 61.2737 127.402 62.8359C128.043 62.1796 128.784 62.2891 129.525 62.5871C130.267 62.8855 131.014 63.125 131.827 63.087C132.153 63.0718 132.478 63.0113 132.588 62.6647C132.705 62.2952 132.411 62.0912 132.153 61.9229C131.602 61.5635 130.962 61.4077 130.348 61.1956C128.342 60.5021 127.377 59.1846 127.566 57.3802C127.731 55.7993 129.32 54.4337 131.194 54.2259C132.543 54.0763 133.841 54.2629 135.111 54.7168C136.258 55.1268 136.971 54.6902 137.114 53.5004C137.278 52.1354 137.997 51.3351 139.129 51.2593C140.151 51.1909 141.215 52.0724 141.553 53.2754C141.66 53.6545 141.747 54.0391 141.891 54.4645ZM121.883 58.5294C122.133 58.4979 122.394 58.5 122.631 58.4268C122.96 58.3254 123.285 58.1492 123.276 57.7462C123.268 57.3359 122.918 57.1963 122.593 57.1018C121.686 56.8379 120.775 57.4127 120.607 58.3489C120.948 58.6059 121.354 58.4989 121.883 58.5294Z"
+                fill="white"
+              />
+              <path
+                d="M50.1191 54.0251C50.1056 53.6106 50.0447 53.351 49.5944 53.3579C47.7453 53.3863 46.7111 54.1586 46.1918 55.9339C45.8523 57.0945 45.3338 57.5265 44.1201 57.5511C42.6764 57.5803 41.2317 57.5571 39.7874 57.5637C39.0801 57.5669 38.6183 57.2465 38.5996 56.5297C38.5801 55.7848 39.1066 55.495 39.7693 55.4621C40.5041 55.4257 41.2417 55.4516 41.9776 55.4329C42.4621 55.4206 42.9316 55.3012 42.9297 54.7059C42.9278 54.1118 42.455 53.9883 41.9733 53.9793C40.954 53.9604 39.9344 53.9655 38.9149 53.9613C38.5401 53.9598 38.1749 53.921 37.8859 53.6479C37.5456 53.3263 37.4312 52.9393 37.5927 52.4915C37.7593 52.0298 38.1174 51.8494 38.586 51.8495C39.8887 51.85 41.1914 51.8525 42.4941 51.8537C42.7207 51.854 42.9475 51.8583 43.1738 51.8494C43.6817 51.8293 44.0884 51.6291 44.1074 51.075C44.1276 50.485 43.6593 50.3086 43.1865 50.2974C41.7996 50.2647 40.4115 50.2792 39.0239 50.271C38.7413 50.2694 38.4503 50.2891 38.1781 50.2302C37.6457 50.1149 37.3561 49.7546 37.3302 49.2081C37.3041 48.6569 37.5555 48.2725 38.0975 48.1427C38.4523 48.0577 38.825 48.0039 39.189 48.0074C41.227 48.0267 43.2673 47.9283 45.3024 48.1087C45.8263 48.1552 46.289 48.0525 46.7478 47.7587C48.3121 46.7571 50.1085 46.6437 51.8885 46.532C54.1582 46.3897 56.4286 46.3813 58.5694 47.3094C59.9029 47.8876 61.0414 48.7053 61.4412 50.2196C61.939 52.1049 60.3556 53.8569 58.4429 53.5469C57.6895 53.4248 56.9321 53.3259 56.1816 53.1891C55.5086 53.0664 55.2688 53.3142 55.2741 53.9974C55.2947 56.6832 55.2751 59.3693 55.2705 62.0553C55.2689 62.9661 55.1578 63.8645 54.8533 64.7231C54.4464 65.8702 53.7661 66.2842 52.5008 66.2186C51.4711 66.1651 50.8781 65.6403 50.5969 64.4972C50.3804 63.6175 50.2744 62.7178 50.2545 61.8145C50.1977 59.2431 50.1643 56.6712 50.1191 54.0251Z"
+                fill="white"
+              />
+              <path
+                d="M106.303 49.7325C107.197 50.4081 107.656 51.3285 108.102 52.2385C109.13 54.3371 110.116 56.4566 111.184 58.7043C111.603 56.3717 111.674 54.1529 111.914 51.9539C112.018 50.9985 112.13 50.0465 112.367 49.1171C112.664 47.9523 113.495 47.3028 114.546 47.3534C115.615 47.4048 116.429 48.1891 116.636 49.3539C116.802 50.2866 116.667 51.2223 116.592 52.1427C116.276 55.993 115.918 59.8416 115.254 63.6517C114.776 66.3952 112.639 67.1433 110.498 65.3187C108.637 63.734 107.577 61.6036 106.575 59.4412C106.386 59.032 106.215 58.6141 105.944 57.9893C105.689 59.7568 105.472 61.3206 105.235 62.8815C105.146 63.466 105.05 64.0542 104.891 64.6223C104.57 65.7722 103.922 66.2698 102.907 66.2173C102.011 66.171 101.428 65.6127 101.235 64.4869C100.93 62.7002 100.826 60.8923 100.948 59.0847C101.108 56.7238 100.978 54.3356 101.58 52.0132C102.01 50.3528 102.942 49.3948 104.298 49.2499C104.998 49.1753 105.643 49.357 106.303 49.7325Z"
+                fill="white"
+              />
+              <path
+                d="M68.5728 36.5235C69.5602 37.2807 70.5585 37.9248 71.3316 38.8506C73.3432 41.2595 72.659 45.1496 69.961 46.5228C68.8146 47.1064 67.6186 47.2128 66.4488 46.6531C65.905 46.3929 65.5468 46.518 65.1647 46.8769C64.7327 47.2827 64.2908 47.6778 63.8551 48.0795C63.245 48.642 62.6672 48.6515 61.9632 48.1557C59.8994 46.7022 57.6181 45.7429 55.0967 45.4244C53.2647 45.193 51.422 45.2284 49.5904 45.3976C48.8167 45.469 48.45 45.2079 48.3955 44.4825C48.3482 43.8534 48.0362 43.2292 48.3192 42.5552C48.8667 42.5671 49.0355 43.0096 49.2255 43.3511C49.5291 43.8966 49.9493 44.1006 50.5511 44.0387C54.6184 43.6204 58.42 44.4239 61.9551 46.492C62.8123 46.9935 64.3552 46.2828 64.615 45.3128C64.7164 44.9342 63.882 43.7435 63.4011 43.654C62.439 43.4751 61.5654 43.1018 60.7432 42.5842C60.2034 42.2444 59.6159 42.1096 58.9688 42.115C57.0446 42.131 55.1823 41.4837 53.237 41.6036C51.8829 41.687 50.5558 42.0089 49.1869 41.9589C46.6776 41.8671 45.3535 40.2372 45.8246 37.7801C46.0549 36.5788 46.8557 35.9136 47.9446 35.5917C48.5957 35.3993 48.9939 35.0558 49.315 34.4678C50.6485 32.0261 53.535 30.9675 55.5618 31.775C56.0139 31.9551 56.3142 31.6935 56.6478 31.4856C58.6424 30.2428 60.7604 29.5898 63.106 30.2749C65.7151 31.037 67.4834 32.6681 68.1601 35.357C68.2568 35.7412 68.3289 36.1285 68.5728 36.5235ZM47.2103 38.2328C47.0698 39.2892 47.4835 40.211 48.3634 40.4068C50.1373 40.8015 51.8572 40.2873 53.5881 40.0372C53.6081 39.3255 52.9388 38.8368 53.3264 38.1064C54.1318 38.472 54.6251 39.1575 55.284 39.6168C57.3 41.0222 59.194 41.2169 60.9934 39.1566C61.1782 38.945 61.3713 38.7252 61.6026 38.5729C62.0988 38.2461 62.3974 38.4194 62.4138 39.0063C62.4296 39.5772 62.157 40.0487 61.848 40.4844C61.5454 40.9112 61.6786 41.2059 62.0103 41.5099C62.8527 42.2819 64.2998 42.4003 65.2501 41.7972C65.5976 41.5767 65.9812 40.9791 66.385 41.4441C66.7369 41.8494 66.1656 42.2367 65.9418 42.6059C65.8544 42.75 65.7426 42.8803 65.6348 43.011C65.429 43.2605 65.4454 43.5184 65.5632 43.8029C66.3523 45.7091 68.596 46.1446 70.0274 44.6652C71.5566 43.0848 71.4548 40.8166 69.7793 39.1363C68.6625 38.0162 68.4036 37.9767 67.0105 38.6984C66.9454 38.7322 66.8511 38.7101 66.7823 38.7134C66.4625 38.4293 66.6242 38.1136 66.7096 37.8347C67.1263 36.4744 66.71 35.2886 66.0037 34.1413C64.48 31.6665 59.7658 29.8724 56.9773 33.5156C56.8057 33.7397 56.636 33.9683 56.4398 34.1699C56.0036 34.618 55.58 34.673 55.3777 33.9827C55.1088 33.065 54.3994 32.9636 53.6389 32.9902C53.1018 33.0089 52.5988 33.2037 52.117 33.4685C50.5448 34.3328 50.1414 35.8473 49.8537 37.4335C49.7913 37.7776 49.8524 38.1852 49.4006 38.3203C49.1161 38.1842 49.097 37.9112 48.9991 37.6822C48.6583 36.8857 48.1 36.8146 47.5542 37.5106C47.419 37.683 47.3532 37.9097 47.2103 38.2328Z"
+                fill="white"
+              />
+              <path
+                d="M62.7673 66.3681C61.9397 66.209 61.2041 66.014 60.568 65.5557C59.4071 64.7193 58.7014 63.6518 58.9643 62.1637C59.1898 60.887 60.3439 59.9525 61.8647 59.6654C63.0964 59.4328 64.3267 59.494 65.5673 59.6589C65.5036 58.7516 65.0731 58.3229 64.1824 58.2277C63.4688 58.1515 62.7766 58.283 62.0857 58.4547C60.4567 58.8594 59.4851 58.4676 59.1649 57.2986C58.8541 56.1635 59.5849 55.0513 61.0188 54.5878C62.573 54.0855 64.1678 53.8844 65.7817 54.2702C67.8956 54.7755 69.3255 56.0257 69.7239 58.2137C70.105 60.3073 70.1798 62.4218 69.7339 64.5232C69.3867 66.1595 68.2192 66.6666 66.7713 65.8176C66.4681 65.6398 66.2146 65.4535 65.8504 65.7004C64.9409 66.317 63.9068 66.4215 62.7673 66.3681ZM64.5666 61.8015C64.3405 61.7992 64.1135 61.7828 63.8885 61.7975C63.3508 61.8326 62.9409 62.0616 62.9126 62.648C62.8826 63.2714 63.3589 63.4511 63.8544 63.5327C64.097 63.5726 64.3648 63.5411 64.6073 63.4836C65.0636 63.3753 65.4983 63.1841 65.5214 62.631C65.5436 62.0963 65.1329 61.9314 64.5666 61.8015Z"
+                fill="white"
+              />
+              <path
+                d="M113.197 71.3946C112.338 70.5796 111.575 69.7645 111.053 68.7392C119.275 73.9045 127.322 73.8212 135.295 68.0789C135.036 69.0564 134.427 69.7629 133.801 70.4236C133.271 70.9837 133.362 71.2927 133.919 71.7749C135.842 73.4392 137.02 75.4994 136.991 78.1177C136.981 78.9318 136.727 79.6709 136.184 80.2976C134.773 81.9232 132.644 81.6902 131.63 79.7958C131.236 79.0605 131.105 78.2485 130.962 77.4427C130.783 76.4358 130.457 75.4775 130.087 74.5267C129.783 73.7454 129.37 73.533 128.524 73.8389C124.493 75.2956 120.485 75.1949 116.53 73.5068C115.322 72.9911 114.225 72.3047 113.197 71.3946Z"
+                fill="white"
+              />
+              <path
+                d="M98.7346 61.6822C99.5432 62.518 99.571 63.3438 98.8816 64.3002C96.8519 67.116 92.2378 67.0839 90.222 64.2672C88.6661 62.0931 88.4642 57.5098 91.0135 55.3963C92.6768 54.0172 95.5337 53.7961 97.2476 55.1135C98.2257 55.8653 98.8014 56.8579 98.6458 58.1183C98.4848 59.423 97.6383 60.2375 96.4613 60.7057C95.3961 61.1294 94.2621 61.2013 93.1273 61.2327C92.9401 61.2378 92.736 61.1218 92.5676 61.2955C92.8953 62.5634 94.402 63.3495 95.7051 62.9386C96.2844 62.7559 96.767 62.4229 97.2184 62.0261C97.6342 61.6606 98.0834 61.3651 98.7346 61.6822ZM95.3179 57.9767C95.5257 57.5567 95.2655 57.3555 94.9426 57.1933C94.0395 56.7394 92.944 57.3553 92.7919 58.4595C93.6468 58.5061 94.509 58.7467 95.3179 57.9767Z"
+                fill="white"
+              />
+              <path
+                d="M75.3175 54.1879C76.5604 54.175 77.7008 54.334 78.7817 54.811C79.2632 55.0234 79.6952 55.3103 79.8246 55.8496C79.9719 56.4635 80.05 57.1155 79.5179 57.593C79.0232 58.0369 78.4125 57.9752 77.8336 57.7586C77.1201 57.4916 76.4357 57.1372 75.6355 57.2105C75.3106 57.2403 74.9837 57.2842 74.8716 57.6295C74.7381 58.0408 75.0401 58.2748 75.3515 58.4183C76.2495 58.8322 77.1605 59.2187 78.0709 59.6055C79.3383 60.144 80.1943 60.9976 80.2494 62.4507C80.3073 63.9783 79.5707 65.0708 78.2341 65.6999C75.9084 66.7947 73.6049 66.5111 71.3991 65.3266C70.6075 64.9015 70.4054 63.9322 70.7886 63.0936C71.0938 62.4259 71.7558 62.1814 72.6836 62.4571C73.4929 62.6977 74.2552 63.1118 75.1332 63.0817C75.4994 63.0692 75.9314 63.117 76.0504 62.6622C76.1644 62.2266 75.827 61.9776 75.4844 61.8253C74.9694 61.5964 74.4368 61.4033 73.9024 61.2222C71.9009 60.5441 70.7852 59.103 71.0083 57.4645C71.2535 55.6634 72.8461 54.3388 74.9071 54.2213C75.02 54.2148 75.1327 54.2044 75.3175 54.1879Z"
+                fill="white"
+              />
+              <path
+                d="M81.3642 57.5666C80.4699 57.3257 79.9541 56.8481 79.9941 55.9273C80.0307 55.0847 80.5981 54.7587 81.3204 54.6346C81.7298 54.5643 81.9112 54.367 81.9266 53.9651C81.9363 53.712 81.99 53.4609 82.0106 53.2078C82.0844 52.3052 82.5038 51.6503 83.3867 51.3651C84.2957 51.0716 85.0541 51.3635 85.6843 52.0429C86.186 52.5838 86.3988 53.2574 86.5049 53.9621C86.5634 54.3513 86.684 54.5654 87.1276 54.5888C87.8654 54.6278 88.4498 54.9282 88.5736 55.7487C88.6913 56.5281 88.2922 57.2872 87.4425 57.5058C86.6034 57.7216 86.4979 58.1933 86.5267 58.9161C86.5535 59.5893 86.4693 60.2683 86.4138 60.9431C86.3328 61.9277 86.5704 62.2854 87.543 62.459C88.2678 62.5883 88.8137 62.8321 88.9649 63.6628C89.1227 64.5293 88.8156 65.1552 88.1422 65.6419C86.4121 66.8923 83.3786 66.0024 82.5016 63.9822C82.1841 63.251 82.0244 62.4797 82.0108 61.6769C81.9923 60.5757 81.9494 59.4748 81.9252 58.3736C81.9171 58.004 81.8237 57.7031 81.3642 57.5666Z"
+                fill="white"
+              />
+              <path
+                d="M81.0813 69.7069C81.6974 69.683 82.2336 69.7096 82.7538 69.8527C83.5745 70.0785 84.0926 71.0342 83.6055 71.7054C83.0785 72.4316 83.2223 72.9667 83.6572 73.586C83.7311 73.6912 83.7393 73.8424 83.7895 74.0118C83.3123 74.2618 82.9633 74.2006 82.6999 73.7583C82.5415 73.4921 82.3907 73.2214 82.2283 72.9577C82.1021 72.7528 81.9279 72.6008 81.6704 72.6851C81.4386 72.7609 81.4453 72.9823 81.4351 73.1796C81.4263 73.3483 81.4288 73.5179 81.4133 73.6859C81.3862 73.9786 81.2401 74.1565 80.9242 74.1439C80.6524 74.1332 80.5023 73.9781 80.5007 73.7167C80.4937 72.5345 80.4934 71.3521 80.5009 70.1699C80.5029 69.8556 80.7216 69.74 81.0813 69.7069ZM82.5503 71.6303C82.8338 71.2403 82.8302 70.8794 82.3713 70.6496C82.1193 70.5234 81.7868 70.4834 81.5779 70.7214C81.333 71.0004 81.3438 71.4018 81.5279 71.6748C81.761 72.0205 82.1312 71.8528 82.5503 71.6303Z"
+                fill="white"
+              />
+              <path
+                d="M35.7435 53.5868C36.4458 53.7973 36.7677 54.237 36.6475 54.8774C36.522 55.5464 36.0382 55.8598 35.3594 55.8615C34.7669 55.8631 34.1737 55.879 33.5821 55.8555C32.8279 55.8256 32.3091 55.3223 32.3118 54.6643C32.3144 54.0232 32.7816 53.5886 33.555 53.5653C34.2594 53.5441 34.9652 53.5698 35.7435 53.5868Z"
+                fill="white"
+              />
+              <path
+                d="M77.4274 70.5931C77.4785 70.1986 77.2976 69.7069 77.8831 69.7117C78.4371 69.7164 78.3523 70.1817 78.3566 70.5314C78.3683 71.491 78.358 72.4508 78.3573 73.4105C78.3568 73.9611 78.1945 74.3261 77.5491 74.0678C77.3693 73.9959 77.232 74.0325 77.0671 74.0896C76.4424 74.3059 75.8692 74.2222 75.4923 73.6439C75.043 72.9547 75.0061 72.2064 75.3989 71.4734C75.7556 70.808 76.3665 70.7358 77.0116 70.914C77.3094 70.9962 77.4408 70.9906 77.4274 70.5931ZM76.5911 71.6581C75.983 71.9629 76.1027 72.4862 76.2217 72.9817C76.2853 73.2467 76.5041 73.4196 76.7991 73.3667C77.1999 73.2949 77.3584 72.9613 77.3808 72.6226C77.4115 72.1589 77.3372 71.6964 76.5911 71.6581Z"
+                fill="white"
+              />
+              <path
+                d="M64.8595 70.4386C64.8424 69.9516 65.0111 69.707 65.4429 69.7054C66.0362 69.7032 66.6296 69.7045 67.2228 69.7117C67.5137 69.7152 67.7198 69.8317 67.7072 70.1619C67.6963 70.4485 67.4937 70.544 67.2505 70.5615C66.9408 70.5837 66.6295 70.5831 66.319 70.5931C66.0258 70.6026 65.838 70.7196 65.8246 71.0441C65.8097 71.4042 65.9915 71.558 66.3322 71.5686C66.5863 71.5765 66.8412 71.578 67.0941 71.6004C67.3738 71.6252 67.594 71.7371 67.5683 72.0691C67.547 72.3434 67.3605 72.4514 67.1078 72.4679C66.9669 72.4772 66.8235 72.4945 66.6846 72.479C66.0358 72.4064 65.7363 72.6499 65.7995 73.3369C65.8308 73.678 65.8984 74.152 65.3289 74.1379C64.7759 74.1241 64.8685 73.6613 64.8637 73.3123C64.851 72.3814 64.8587 71.4502 64.8595 70.4386Z"
+                fill="white"
+              />
+              <path
+                d="M51.43 73.4148C51.4298 72.3499 51.4405 71.3651 51.4269 70.3805C51.4207 69.927 51.5941 69.6932 52.0655 69.7011C52.6008 69.71 53.1364 69.6989 53.6716 69.7086C53.9349 69.7133 54.1983 69.7568 54.2184 70.099C54.2415 70.4946 53.9479 70.5449 53.6564 70.5691C53.4041 70.5901 53.1498 70.5904 52.8963 70.5953C52.5552 70.6018 52.373 70.7551 52.3834 71.1127C52.3928 71.4361 52.5904 71.5155 52.8711 71.5767C53.2899 71.6679 54.0296 71.316 54.043 72.0123C54.0585 72.8213 53.2772 72.4005 52.8531 72.4757C52.1922 72.593 52.3942 73.0763 52.3504 73.4575C52.3144 73.7714 52.3262 74.1173 51.8958 74.1365C51.4482 74.1566 51.438 73.8167 51.43 73.4148Z"
+                fill="white"
+              />
+              <path
+                d="M86.8206 73.8283C85.8797 74.3384 85.115 74.3075 84.596 73.7561C83.9958 73.1184 84.0044 72.3809 84.3359 71.633C84.6482 70.9284 85.2677 70.7953 85.9634 70.8504C86.664 70.9059 87.0083 71.3547 87.1641 71.9752C87.3011 72.5207 87.1401 72.847 86.4935 72.82C86.0858 72.8029 85.6535 72.6996 85.221 72.9766C85.329 73.4894 85.6878 73.4791 86.0401 73.3511C86.3715 73.2307 86.654 72.9185 87.0465 73.1801C87.1669 73.4374 87.0067 73.6076 86.8206 73.8283ZM85.5096 72.053C85.7333 72.0274 86.0038 72.1553 86.1568 71.8617C86.0075 71.5652 85.7841 71.4485 85.4874 71.6021C85.3161 71.6908 85.1476 71.836 85.5096 72.053Z"
+                fill="white"
+              />
+              <path
+                d="M56.1749 71.6299C55.9336 71.6901 55.7475 71.7477 55.5723 71.8287C55.3082 71.9507 55.0134 72.0947 54.8358 71.7673C54.6953 71.5082 54.9121 71.2796 55.1094 71.1219C55.627 70.7085 56.2284 70.7488 56.7964 70.9441C57.3076 71.1197 57.4774 71.5788 57.4771 72.0981C57.4771 72.1544 57.4801 72.2107 57.4782 72.2668C57.4602 72.7995 57.559 73.3718 57.3953 73.8556C57.1503 74.5798 56.4775 73.9028 55.9792 74.1225C55.324 74.4115 54.6451 73.9092 54.6196 73.2846C54.5894 72.544 55.039 72.2373 55.7302 72.1978C55.9247 72.1867 56.1492 72.2047 56.3047 72.1144C56.5926 71.9472 56.516 71.7607 56.1749 71.6299ZM55.7779 72.8927C55.5076 73.1791 55.6144 73.3453 55.9586 73.4001C56.1691 73.4336 56.4052 73.3574 56.4226 73.1341C56.4562 72.7013 56.1063 72.8727 55.7779 72.8927Z"
+                fill="white"
+              />
+              <path
+                d="M72.3645 71.0415C73.8041 70.568 74.6911 71.0319 74.8681 72.2967C74.9667 73.0019 74.7176 73.5978 74.1306 73.9738C73.5695 74.3331 72.9245 74.3193 72.3725 73.9414C71.757 73.52 71.5725 72.8679 71.6971 72.1527C71.7699 71.7351 71.9509 71.3475 72.3645 71.0415ZM73.5508 71.7126C72.8521 71.4973 72.6248 71.8756 72.6176 72.4793C72.6118 72.9617 72.7427 73.4471 73.3407 73.3641C73.9912 73.2738 73.8974 72.6989 73.8591 72.2316C73.8467 72.0798 73.7261 71.9368 73.5508 71.7126Z"
+                fill="white"
+              />
+              <path
+                d="M94.0811 70.8539C95.5118 70.8178 95.7272 71.0275 95.7292 72.3871C95.7296 72.6694 95.73 72.9517 95.7308 73.234C95.7322 73.805 95.7848 74.3902 94.8705 74.0343C94.6528 73.9495 94.3331 74.1709 94.0584 74.178C93.4432 74.1939 93.0059 73.9011 92.9277 73.2714C92.844 72.5971 93.285 72.3169 93.8786 72.2078C94.1935 72.1499 94.5685 72.3066 94.8317 71.9216C94.6673 71.5558 94.3753 71.5643 94.076 71.7009C93.7512 71.8492 93.3446 72.1936 93.1577 71.6944C92.9877 71.2403 93.4797 71.0507 93.8509 70.899C93.9024 70.878 93.9608 70.8738 94.0811 70.8539ZM94.6875 72.8609C94.4015 72.8477 94.0573 72.7056 93.9438 73.1266C93.9032 73.2769 94.0421 73.3813 94.1895 73.3921C94.5199 73.4163 94.8058 73.3642 94.6875 72.8609Z"
+                fill="white"
+              />
+              <path
+                d="M43.3158 59.1678C43.7821 59.19 44.193 59.0924 44.5401 59.3387C44.9029 59.5961 44.9796 59.9779 44.9093 60.3878C44.8292 60.8543 44.532 61.1609 44.069 61.2036C43.5126 61.2549 42.9458 61.2652 42.389 61.2219C41.7311 61.1709 41.3687 60.7817 41.4113 60.1006C41.4523 59.4458 41.8537 59.1724 42.4791 59.1705C42.7317 59.1697 42.9843 59.1687 43.3158 59.1678Z"
+                fill="white"
+              />
+              <path
+                d="M102.566 72.3087C103.449 72.1569 103.449 72.1569 103.806 71.8278C103.56 71.5 103.271 71.5919 102.992 71.7546C102.713 71.9176 102.448 72.0669 102.129 71.7198C102.35 70.8229 103.051 70.8082 103.771 70.8613C104.463 70.9123 104.755 71.3307 104.74 71.9972C104.736 72.1661 104.74 72.3352 104.739 72.5042C104.735 74.2332 104.735 74.2339 103.028 74.1822C102.525 74.167 102.157 73.931 101.994 73.4556C101.819 72.9429 102.07 72.5903 102.566 72.3087ZM102.989 72.9708C102.855 73.211 102.961 73.3547 103.196 73.3927C103.469 73.4368 103.703 73.3743 103.735 73.0248C103.561 72.7415 103.314 72.8306 102.989 72.9708Z"
+                fill="white"
+              />
+              <path
+                d="M70.9129 73.6543C70.2639 74.2947 69.5555 74.3823 68.859 73.9689C68.1824 73.5672 67.9974 72.8817 68.1414 72.1279C68.3209 71.1883 68.9198 70.769 69.9138 70.8508C70.7329 70.9181 71.2244 71.4834 71.2583 72.3955C71.2743 72.8265 71.2139 73.2377 70.9129 73.6543ZM69.0865 72.1361C69.0285 72.417 69.0063 72.6998 69.1277 72.9679C69.2895 73.3254 69.5562 73.5079 69.9437 73.325C70.3116 73.1514 70.3247 72.7963 70.315 72.4484C70.306 72.1262 70.2573 71.8147 69.9049 71.6827C69.5497 71.5497 69.3052 71.7055 69.0865 72.1361Z"
+                fill="white"
+              />
+              <path
+                d="M99.1572 71.0222C99.3544 71.9221 99.2501 72.768 99.2675 73.6107C99.2716 73.8111 99.2206 74.1055 99.0164 74.0877C98.3019 74.0254 97.558 74.4026 96.8798 74.0165C96.3169 73.6961 96.2791 73.1068 96.291 72.5259C96.2984 72.1597 96.2988 71.7933 96.3032 71.427C96.307 71.1068 96.4089 70.8731 96.7863 70.8806C97.1746 70.8883 97.2334 71.1529 97.2376 71.4575C97.2435 71.8802 97.2406 72.303 97.2513 72.7254C97.26 73.0698 97.3892 73.3613 97.775 73.3658C98.1547 73.3703 98.3094 73.0879 98.3264 72.7446C98.3473 72.3228 98.3435 71.8996 98.3482 71.477C98.3543 70.9408 98.5997 70.7593 99.1572 71.0222Z"
+                fill="white"
+              />
+              <path
+                d="M106.921 70.8501C107.865 70.7955 108.223 71.2984 108.273 72.081C108.306 72.5877 108.285 73.0982 108.278 73.6069C108.275 73.8808 108.203 74.1226 107.863 74.1344C107.492 74.1473 107.373 73.9105 107.364 73.5912C107.353 73.1675 107.356 72.7433 107.347 72.3195C107.34 71.9893 107.286 71.6643 106.864 71.6614C106.439 71.6584 106.275 71.9506 106.258 72.3308C106.239 72.7542 106.247 73.1786 106.235 73.6024C106.228 73.8745 106.167 74.1206 105.824 74.133C105.454 74.1465 105.333 73.9159 105.323 73.5931C105.315 73.3106 105.307 73.0277 105.313 72.7452C105.325 72.2098 105.205 71.6161 105.398 71.1535C105.663 70.5161 106.391 71.1397 106.921 70.8501Z"
+                fill="white"
+              />
+              <path
+                d="M88.6722 71.6925C88.7569 72.208 89.1957 72.051 89.4818 72.1684C89.9924 72.378 90.4133 72.6688 90.3355 73.2738C90.2602 73.8599 89.8094 74.1245 89.2576 74.177C88.5231 74.2469 87.8459 74.1681 87.5852 73.3059C88.1717 72.6334 88.7777 73.9041 89.3428 73.2393C89.2021 72.8217 88.8052 72.888 88.5092 72.7743C88.0074 72.5816 87.5606 72.3251 87.6448 71.6878C87.7201 71.1178 88.1442 70.9034 88.6588 70.8369C89.2445 70.7612 89.7962 70.814 90.1646 71.3618C90.2475 71.4851 90.2675 71.6468 90.1429 71.7467C89.9532 71.8987 89.731 71.9229 89.5105 71.7911C89.2564 71.6393 89.0293 71.3415 88.6722 71.6925Z"
+                fill="white"
+              />
+              <path
+                d="M58.284 73.1094C58.7724 73.1861 59.1555 73.7054 59.6533 73.2505C59.4735 72.793 59.032 72.8637 58.7213 72.7144C58.2847 72.5045 57.8944 72.2475 57.9769 71.7114C58.0667 71.1276 58.4937 70.8686 59.0693 70.8454C59.7088 70.8196 60.3238 70.8408 60.5645 71.5912C60.0505 72.3758 59.4385 71.0808 58.91 71.7215C59.1373 72.2132 59.6614 72.0646 60.0038 72.2683C60.4506 72.534 60.8026 72.8299 60.6438 73.411C60.4855 73.9904 59.7815 74.3055 58.9404 74.1764C58.4303 74.0981 58.0213 73.8826 57.9787 73.2984C57.9745 73.2416 58.1343 73.1728 58.284 73.1094Z"
+                fill="white"
+              />
+              <path
+                d="M35.9082 49.9728C36.4289 50.9212 36.1771 51.5675 35.2587 51.6837C34.6293 51.7633 33.9446 51.8651 33.484 51.2399C33.2522 50.9254 33.2125 50.5698 33.4266 50.215C33.8435 49.5238 34.5247 49.6658 35.1606 49.6678C35.4227 49.6686 35.6536 49.7614 35.9082 49.9728Z"
+                fill="white"
+              />
+              <path
+                d="M36.9743 59.5827C36.536 59.5771 36.161 59.6183 35.8114 59.5425C35.2924 59.4299 34.9621 59.0629 35.0044 58.5185C35.0455 57.989 35.3596 57.6455 35.9351 57.6269C36.1872 57.6188 36.44 57.629 36.6921 57.6203C37.2671 57.6003 37.7968 57.697 37.9152 58.3658C38.032 59.0259 37.7017 59.4325 36.9743 59.5827Z"
+                fill="white"
+              />
+              <path
+                d="M90.6426 71.007C90.6981 70.9332 90.7228 70.9171 90.739 70.8948C91.5714 69.7483 91.6069 69.7493 92.4496 70.9562C92.5815 71.145 92.5632 71.3197 92.3963 71.4821C91.7162 72.1433 91.7208 72.8102 92.3835 73.4807C92.5161 73.6148 92.5423 73.7733 92.4726 73.943C92.3964 74.1282 92.2271 74.1622 92.0543 74.1615C91.5478 74.1597 91.1024 73.9488 91.0765 73.4318C91.0355 72.6104 90.9723 71.8116 90.6426 71.007Z"
+                fill="white"
+              />
+              <path
+                d="M110.353 71.5177C109.828 72.1819 109.769 72.8169 110.342 73.4069C110.519 73.5888 110.668 73.7381 110.523 73.9774C110.383 74.2076 110.132 74.1915 109.91 74.1474C109.309 74.0274 109.105 73.5935 109.059 73.036C109.012 72.4622 109.08 71.9085 108.735 71.3351C108.491 70.9307 108.989 70.3731 109.331 70.1095C109.718 69.8113 109.957 70.2028 110.04 70.6212C110.101 70.9299 110.949 70.91 110.353 71.5177Z"
+                fill="white"
+              />
+              <path
+                d="M62.6372 74.1179C61.6401 74.1064 61.3756 73.8507 61.3243 72.9499C61.2946 72.4283 61.311 71.9323 61.0594 71.4073C60.8285 70.9256 61.2791 70.4342 61.6427 70.0758C61.7751 69.9452 62.1215 69.9814 62.2 70.256C62.2918 70.5769 62.4619 70.7651 62.744 70.947C63.0113 71.1193 62.8815 71.3452 62.647 71.5532C62.088 72.049 62.0787 72.914 62.6353 73.4082C62.9094 73.6516 62.9687 73.835 62.6372 74.1179Z"
+                fill="white"
+              />
+              <path
+                d="M100.706 73.853C100.178 74.3472 99.9161 74.158 99.8713 73.5737C99.835 73.0988 99.8552 72.6194 99.8553 72.142C99.8556 70.7609 99.8669 70.7529 101.199 70.8742C101.372 70.8899 101.54 70.8949 101.606 71.093C101.653 71.2333 101.663 71.4406 101.544 71.4783C100.467 71.822 100.846 72.7246 100.762 73.4486C100.749 73.5601 100.741 73.6721 100.706 73.853Z"
+                fill="white"
+              />
+            </svg>
+            <div class="mb-[100px] ms-[20px] md:ms-[30px]">
+              <h2 class="text-[16px] font-semibold text-white mb-[20px]">
+                Tuesday – Saturday: 12:00pm – 23:00pm
+              </h2>
+              <a
+                class="text-[16px] font-semibold underline text-white hover:text-[#FFD40D]"
+                href="#"
+                >Closed on Sunday</a
+              >
+            </div>
+            <h3 class="text-[16px] font-semibold text-white ms-[20px] md:ms-[30px] pb-[20px]"
+            >
+              5 star rated on TripAdvisor
+            </h3>
+          </div>
+          <div class="about">
+            <h2
+              class="md:mb-[50px] mb-[20px] text-[26px] font-bold border-b-[5px] border-[#FFD40D] w-fit"
+            >
+              About
+            </h2>
+            <ul>
+              <li
+                class="mb-[15px] text-[16px] hover:translate-x-[15px] hover:text-[#f3274c] group duration-300 cursor-pointer"
+              >
+                <i
+                  class="fa-solid fa-angle-right group-hover:text-[#FFD40D] text-[#616161] me-[8px]"
+                ></i
+                >Fredoka One
+              </li>
+              <li
+                class="mb-[15px] text-[16px] hover:translate-x-[15px] hover:text-[#f3274c] group duration-300 cursor-pointer"
+              >
+                <i
+                  class="fa-solid fa-angle-right group-hover:text-[#FFD40D] text-[#616161] me-[8px]"
+                ></i
+                >Special Dish
+              </li>
+              <li
+                class="mb-[15px] text-[16px] hover:translate-x-[15px] hover:text-[#f3274c] group duration-300 cursor-pointer"
+              >
+                <i
+                  class="fa-solid fa-angle-right group-hover:text-[#FFD40D] text-[#616161] me-[8px]"
+                ></i
+                >Reservation
+              </li>
+              <li
+                class="mb-[15px] text-[16px] hover:translate-x-[15px] hover:text-[#f3274c] group duration-300 cursor-pointer"
+              >
+                <i
+                  class="fa-solid fa-angle-right group-hover:text-[#FFD40D] text-[#616161] me-[8px]"
+                ></i
+                >Contact
+              </li>
+            </ul>
+          </div>
+          <div class="Menu">
+            <h2
+              class="md:mb-[50px] mb-[20px] text-[26px] font-bold border-b-[5px] border-[#FFD40D] w-fit"
+            >
+              Menu
+            </h2>
+            <ul>
+              <li
+                class="mb-[15px] text-[16px] hover:translate-x-[15px] hover:text-[#f3274c] group duration-300 cursor-pointer"
+              >
+                <i
+                  class="fa-solid fa-angle-right group-hover:text-[#FFD40D] text-[#616161] me-[8px]"
+                ></i
+                >Steaks
+              </li>
+              <li
+                class="mb-[15px] text-[16px] hover:translate-x-[15px] hover:text-[#f3274c] group duration-300 cursor-pointer"
+              >
+                <i
+                  class="fa-solid fa-angle-right group-hover:text-[#FFD40D] text-[#616161] me-[8px]"
+                ></i
+                >Burgers
+              </li>
+              <li
+                class="mb-[15px] text-[16px] hover:translate-x-[15px] hover:text-[#f3274c] group duration-300 cursor-pointer"
+              >
+                <i
+                  class="fa-solid fa-angle-right group-hover:text-[#FFD40D] text-[#616161] me-[8px]"
+                ></i
+                >Coctails
+              </li>
+              <li
+                class="mb-[15px] text-[16px] hover:translate-x-[15px] hover:text-[#f3274c] group duration-300 cursor-pointer"
+              >
+                <i
+                  class="fa-solid fa-angle-right group-hover:text-[#FFD40D] text-[#616161] me-[8px]"
+                ></i
+                >Bar B Q
+              </li>
+              <li
+                class="mb-[15px] text-[16px] hover:translate-x-[15px] hover:text-[#f3274c] group duration-300 cursor-pointer"
+              >
+                <i
+                  class="fa-solid fa-angle-right group-hover:text-[#FFD40D] text-[#616161] me-[8px]"
+                ></i
+                >Desserts
+              </li>
+            </ul>
+          </div>
+          <div class="newsletter">
+            <h2
+              class="md:mb-[50px] mb-[20px] text-[26px] font-bold border-b-[5px] border-[#FFD40D] w-fit"
+            >
+              Newsletter
+            </h2>
+            <p class="mb-[20px] md:mt-[50px]">Get recent news and updates.</p>
+            <input
+              class="w-[360px] h-[60px] rounded-[10px] border-[1px] border-[#DEDEDE] px-[20px] py-[10px] outline-none caret-[#FFD40D] placeholder:ps-1"
+              type="text"
+              name=""
+              placeholder="Email Address"
+            />
+            <button
+              class="btn mt-[30px] block hover:scale-105 relative hover:before:left-[-7px] hover:before:w-[110%] before:[*] before:absolute before:w-[95%] before:h-[69px] before:border-[3px] before:border-[#f3274c] before:left-[13px] before:top-[-6px] before:rounded-[13px] before:duration-300 before:ease-in-out duration-300 ease-in-out hover:bg-[#f3274c] hover:before:border-[#f3274c] w-[130px] h-[57px] bg-[#f3274c] rounded-lg text-[18px] text-white text-[18px] font-medium"
+            >
+              Subscribe
+            </button>
+          </div>
+        </div>
+        <div class="md:pt-[30px] pt-[20px] flex flex-col md:flex-row items-center justify-between relative z-50">
+          <h2 class="text-[16px] font-semibold mb-[10px] md:mb-0">
+            <span class="text-[#F3274C]">© 2025 TesteNest</span> | All
+            shawonetc3 Themes
+          </h2>
+          <div class="flex gap-[10px] md:gap-[100px] font-semibold">
+            <a class="underline hover:text-[#F3274C]" href="#">Facebook</a>
+            <a class="underline hover:text-[#F3274C]" href="#">Instgram</a>
+          </div>
+        </div>
+      </div>
+      <img
+        class="absolute bottom-0 left-0 hidden md:block"
+        src="./Images/footer-1.webp"
+        alt=""
+      />
+      <img
+        class="absolute bottom-0 right-0 hidden md:block"
+        src="./Images/footer-2.webp"
+        alt=""
+      />
+    </footer>
+    <!-- End Footer  -->
+
+    <!-- Scroll to top button  -->
+    <button id="btn-top" class="hidden md:block">
+      <i class="fa-solid fa-angles-up"></i>
+    </button>
+
+    <!-- Script JQ -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"
+      integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- Aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- tailwind link  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
+    <!-- Owl carousel script -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"
+      integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- Aos  -->
+    <script>
+      AOS.init();
+    </script>
+    <!-- JS Script  -->
+    <script src="script.js"></script>
+  </body>
+</html>

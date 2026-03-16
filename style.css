@@ -1,0 +1,238 @@
+@import "tailwindcss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Fredoka", sans-serif;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Scroll to top button  */
+#btn-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 3px solid #ffd40d;
+  background-color: #f3274c;
+  color: white;
+  box-shadow: 0 0 5px #ffd40d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999999;
+}
+
+/* Back Class  */
+.back {
+  transform: translateX(100%);
+}
+
+/* Start Header  */
+header {
+  .active {
+    color: #ffc222;
+  }
+}
+
+/* Start About  */
+.about {
+  .Category {
+    li {
+      &.active {
+        position: relative;
+        background-color: #f3274c;
+        color: white;
+        border-color: #f3274c;
+        svg {
+          path {
+            fill: white !important;
+          }
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          top: 100%;
+          left: -5px;
+          width: 0;
+          height: 0;
+          border-left: 95px solid transparent;
+          border-right: 95px solid transparent;
+          border-top: 30px solid #f3274c;
+          border-radius: 45%;
+          z-index: -1;
+        }
+      }
+    }
+    .divtaps:not(:first-of-type) {
+      display: none;
+    }
+  }
+}
+
+/* Star Color  */
+.star-color {
+  color: #f3274c !important;
+}
+
+.active {
+  color: #01693a;
+}
+
+/* Start Deal  */
+.deals {
+  .swiper-slide {
+    transform: scale(0.8); /* السلايدات الجانبية أصغر */
+    transition: transform 0.3s ease;
+  }
+  .swiper-slide-active {
+    transform: scale(1); /* السلايد اللي في النص يرجع لحجمه الطبيعي */
+    opacity: 1;
+  }
+}
+/* End Deal  */
+
+/* Start Testimonials  */
+.testimonial {
+  /* Slider scale  */
+  .swiper {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: 0 auto;
+  }
+
+  .swiper-slide {
+    transform: scale(0.9);
+  }
+  /* تنسيق العنصر الموجود في المنتصف (النشط) */
+  .swiper-slide-active {
+    opacity: 1;
+    transform: scale(1.3) !important;
+    z-index: 2;
+  }
+
+  /* تنسيق أسهم التنقل لتكون بيضاء ودائرية */
+  .swiper-button-next,
+  .swiper-button-prev {
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: black;
+  }
+
+  /* تصغير حجم أيقونة السهم داخل الدائرة */
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    font-size: 15px;
+    font-weight: bold;
+  }
+}
+/* End Testimonials  */
+
+/* Media Query  */
+@media (max-width: 767px) {
+  body {
+    overflow-x: hidden !important;
+  }
+  header {
+    .logo {
+      flex: 1;
+    }
+    .r-side {
+      position: fixed;
+      left: 0;
+      top: 0;
+      padding: 40px;
+      z-index: 9999;
+      background-color: #f3274c;
+      height: 100vh;
+      width: 250px;
+      flex-direction: column;
+      transform: translateX(-100%);
+      transition: 0.3s;
+      .links {
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+        a {
+          font-size: 20px;
+        }
+      }
+      &.back {
+        transform: translateX(0);
+      }
+    }
+  }
+  .about {
+    .Category {
+      ul {
+        gap: 5px;
+        li {
+          padding: 5px;
+          width: 90px;
+          height: 90px;
+          p {
+            margin-top: 0;
+            font-size: 16px;
+          }
+          &.active {
+            svg {
+              width: 45px;
+              height: 45px;
+            }
+            &::after {
+              content: "";
+              position: absolute;
+              top: 90%;
+              left: -6px;
+              width: 0;
+              height: 0;
+              border-left: 46px solid transparent;
+              border-right: 46px solid transparent;
+              border-top: 30px solid #f3274c;
+              border-radius: 30%;
+              z-index: -1;
+            }
+          }
+        }
+      }
+    }
+  }
+  .testimonials {
+    .box {
+      .images {
+        display: none;
+      }
+    }
+  }
+}
