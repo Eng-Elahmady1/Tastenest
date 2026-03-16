@@ -50,35 +50,46 @@ $(document).ready(function () {
 
   // Start Count Down 
   // Set the date and time for the countdown (YYYY-MM-DDTHH:MM:SS)
-  var countDownDate = new Date("2028-04-30T23:59:59").getTime();
+  // تحديد تاريخ النهاية
+    var countDownDate = new Date("2028-04-30T23:59:59").getTime();
 
-  // Update the countdown every 1 second
-  var x = setInterval(function() {
+    // تحديث العداد كل ثانية واحدة
+    var x = setInterval(function() {
 
-      // Get the current date and time
-      var now = new Date().getTime();
+        // الحصول على الوقت الحالي
+        var now = new Date().getTime();
 
-      // Find the time difference between now and the countdown date
-      var distance = countDownDate - now;
+        // حساب الفرق بين الوقت الحالي وتاريخ النهاية
+        var distance = countDownDate - now;
 
-      // Calculate days, hours, minutes, and seconds
-      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        // حساب الأيام والساعات والدقائق والثواني
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-      // Display the results
-      document.getElementById("days").innerHTML = days;
-      document.getElementById("hours").innerHTML = hours;
-      document.getElementById("minutes").innerHTML = minutes;
-      document.getElementById("seconds").innerHTML = seconds;
+        // التحقق من وجود العناصر في الصفحة قبل محاولة تعديلها لمنع خطأ الـ Null
+        var daysEl = document.getElementById("days");
+        var hoursEl = document.getElementById("hours");
+        var minutesEl = document.getElementById("minutes");
+        var secondsEl = document.getElementById("seconds");
 
-      // If the countdown is over, display a message
-      if (distance < 0) {
-          clearInterval(x);
-          document.getElementById("countdown").innerHTML = "EXPIRED";
-      }
-  }, 1000);
+        if (daysEl && hoursEl && minutesEl && secondsEl) {
+            daysEl.innerHTML = days;
+            hoursEl.innerHTML = hours;
+            minutesEl.innerHTML = minutes;
+            secondsEl.innerHTML = seconds;
+        }
+
+        // إذا انتهى الوقت
+        if (distance < 0) {
+            clearInterval(x);
+            var countdownEl = document.getElementById("countdown");
+            if (countdownEl) {
+                countdownEl.innerHTML = "EXPIRED";
+            }
+        }
+    }, 1000);
   // End Count Down
 
 });
