@@ -53,7 +53,7 @@ ul {
 }
 
 .landing{
-  background-image: url('/images/landing.webp');
+  background-image: url('./images/landing.webp') !important;
 }
 
 /* Back Class  */
