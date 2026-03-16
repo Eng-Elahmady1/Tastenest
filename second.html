@@ -39,7 +39,7 @@
 
     <!-- tailwind link  -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <!-- Css Link  -->
     <link rel="stylesheet" href="./style.css" />
   </head>
@@ -1880,11 +1880,64 @@ derived largely from animal</p>
     <!-- Swiper Js Link  -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    <!-- Aos  -->
-    <script>
-      AOS.init();
-    </script>
     <!-- JS Script  -->
     <script src="script.js"></script>
+    <!-- Aos  -->
+    <script>
+
+      // Testimonial Swiper 
+      var swiper = new Swiper(".mySwiper-1", {
+        slidesPerView: 5, // عدد العناصر الظاهرة في الشاشة
+        centeredSlides: true, // تفعيل تمركز العنصر النشط
+        spaceBetween: 30, // المسافة بين الصور
+        loop: true, // جعل السلايدر يدور باستمرار ولا يتوقف عند النهاية
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        // لضمان التجاوب مع شاشات الموبايل
+        breakpoints: {
+          320: { slidesPerView: 3, spaceBetween: 20 },
+          768: { slidesPerView: 3, spaceBetween: 30 },
+          1024: { slidesPerView: 5, spaceBetween: 30 },
+        },
+      });
+
+      /* Deal Swiper */
+      var swiper = new Swiper(".mySwiper-2", {
+        slidesPerView: 1.5, // عدد العناصر الظاهرة في الشاشة
+        centeredSlides: true, // تفعيل تمركز العنصر النشط
+        spaceBetween: 30, // المسافة بين الصور
+        loop: true, // جعل السلايدر يدور باستمرار ولا يتوقف عند النهاية
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: false,
+        },
+        // لضمان التجاوب مع شاشات الموبايل
+        breakpoints: {
+          320: { slidesPerView: 1, spaceBetween: 20 },
+          768: { slidesPerView: 1, spaceBetween: 30 },
+          1024: { slidesPerView: 2, spaceBetween: 30 },
+        },
+      });
+
+      // Rate Swiper 
+      var swiper = new Swiper(".mySwiper-3", {
+        slidesPerView: 1, // عدد العناصر الظاهرة في الشاشة
+        centeredSlides: true, // تفعيل تمركز العنصر النشط
+        spaceBetween: 30, // المسافة بين الصور
+        loop: true, // جعل السلايدر يدور باستمرار ولا يتوقف عند النهاية
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: false,
+        },
+        // لضمان التجاوب مع شاشات الموبايل
+        breakpoints: {
+          320: { slidesPerView: 1, spaceBetween: 20 },
+          768: { slidesPerView: 1, spaceBetween: 30 },
+          1024: { slidesPerView: 1, spaceBetween: 30 },
+        },
+      });
+    </script>
   </body>
 </html>
